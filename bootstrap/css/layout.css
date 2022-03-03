@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+  
+  a.more {
+    display: block; box-sizing: border-box; width: 250px; border:1px solid #fff; text-align: center; padding:10px 0; border-radius: 8px;
+    transition:all .3s; color:#fff; margin:30px auto 0;
+  }
+  a.more:hover {
+    background: #fff; color:#333; text-decoration: none;
+  }
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color:#fff;
+  }
+  .hidden, #skipNav{position: absolute; display: block;width:1px; height: 1px;
+    left:-1000%; top:0; overflow: hidden; color: rgba(0,0,0,0);}
+
+/* 와이드 pc */
+.wrap .container-fluid {padding: 0;}
+
+/* 네비 */
+a.navbar-brand {display:block; width: 200px; background: url(../images/logo.png) 0 0 no-repeat;}
+.navbar-default {background-color: rgba(0,0,0,1);}
+.navbar-default .navbar-nav>li>a {color:#fff;}
+.navbar {border: 1px solid #000;}
+
+#navbar .container {padding: 0;}
+
+/* 비주얼 페이지네이션 */
+.main_visual{margin-top:50px;}
+.carousel-indicators {bottom: 15%;}
+.carousel-indicators li {width: 40px;}
+.carousel-indicators .active {width: 40px; }
+.main_visual .carousel-inner img{width:100%; object-fit:cover;}
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right { font-size: 40px;}
+
+
+
+/* model */
+#content .model {background: #222; padding-bottom:100px;}
+#content .model h3 {text-align: center; margin-bottom: 40px;  margin-top: 0; font-size: 3.750em;  padding-top:150px;}
+#content .model>p {text-align: center; font-size: 1.500em; padding: 0 10% 50px;}
+
+
+#content .model .container a {display:block; overflow: hidden; transition: all .3s;}
+#content .model .container a:hover {color:#333; background: #fff;}
+#content .model .container a img {width:50%;}
+#content .model .container a dl {width:50%; display: block;}
+#content .model .container a dl dt {padding: 50px 20px 30px; font-size: 1.500em;}
+#content .model .container a dd {padding:0 10%; line-height: 2rem; white-space:normal;}
+#content .model .container a:nth-of-type(odd) img {float:left;}
+#content .model .container a:nth-of-type(even) img {float: right;}
+#content .model .container a:nth-of-type(odd) dl {float:right;}
+#content .model .container a:nth-of-type(even) dl {float: left;}
+#content .model .btn-primary {border-color: #fff; background-color:rgba(0,0,0,0);}
+
+#content .modal-title {color:#333;}
+
+/* #content .modal .modal-body .row a:hover {background: #333;} */
+#content .modal .modal-body .row a img {width:100%;}
+
+#content .modal .modal-body ul {padding:0;}
+#content .modal .modal-body dl {color:#333; text-align: center;}
+#content .modal-body dt:nth-of-type(1) {font-size:1.5rem; padding: 20px 0;}
+
+#content .model .modal-body .progress-bar {background-color: #333;}
+#content .model .modal-body .progress div span {margin-left:10px; color: #999;}
+
+#content .model .view_list li:nth-of-type(n+2) {display: none;}
+
+
+/* design */
+
+#content .design {background: #111; padding-bottom:100px;}
+#content .design h3 {text-align: center; margin-bottom: 40px;  margin-top: 0; font-size: 3.750em;  padding-top:150px;}
+#content .design>p {text-align: center; font-size: 1.500em; padding: 0 10% 50px;}
+
+#content .design .bg_box {width: 100%; padding: 0;}
+#content .design .bg_box p {text-align: center; font-size: 1.500em; padding: 8% 10%; background: url(../images/design_bg.jpg) center center no-repeat; background-attachment: fixed;}
+
+#content .design .panel-body p {color:#333; line-height: 1.5rem;}
+
+#content .design .panel-body p:nth-last-of-type(1) {margin-bottom:20px;}
+
+
+
+/* gallery */
+
+#content .gallery {background: #222; padding-bottom: 100px;}
+#content .gallery h3 {text-align: center; margin-bottom: 40px;  margin-top: 0; font-size: 3.750em;  padding-top:150px;}
+#content .gallery>p {text-align: center; font-size: 1.500em; padding: 0 10% 50px;}
+
+#content .gallery .container a {display:block; position:relative; overflow: hidden;}
+#content .gallery .container a p {box-sizing: border-box; position:absolute; width: 100%; height: 100%; left:0; top:0; transition:all .3s; background: rgba(0,0,0,0); transform:translateY(100%); padding-left:20px; font-size:1.5rem; color: #fff;}
+#content .gallery .container a:hover p {display: block; background: rgba(0,0,0,.6); transform: translateY(0); padding-top:33.33%;}
+#content .gallery .container a:hover p::before {content:''; width:100px; height: 25px; background: url(../images/logo_small.png) 0 0 no-repeat; position:absolute; right:20px; top:20px;}
+#content a.thumbnail:hover {border-color: rgba(0,0,0,.6);}
+#content .gallery .container a p span { opacity: 0;  transition: all .3s; transition-delay: .3s; }
+#content .gallery .container a:hover p span {opacity: 1; }
+
+/* about */
+
+#content .about {background: #111; padding-bottom: 100px;}
+#content .about h3 {text-align: center; margin-bottom: 40px;  margin-top: 0; font-size: 3.750em;  padding-top:150px;}
+#content .about>p {text-align: center; font-size: 1.500em; padding: 0 10% 50px;}
+#content .about>p span {display: block; margin-bottom: 20px;}
+
+#content .about .container ul li a {color:#fff;}
+#content .about .container ul li:hover a {color:#666;}
+#content .about .container ul li.active a {color:#333;}
+
+
+#content .about .tab-content {}
+#content .about .tab-content dl {}
+#content .about .tab-content dt {padding: 30% 0 0; font-size: 2rem;}
+#content .about .tab-content dd {padding: 20px 0 0; line-height: 1.5rem;}
+
+/* footer */
+
+#footerArea {background: #000; padding:50px 0;}
+#footerArea .footer_inner {position:relative; margin: 0 auto; left:0; top:0;}
+#footerArea address {text-align: center; color: #f4f4f4; font-size: .875em;}
+#footerArea p {text-align: center; color: #f4f4f4; font-size: .750rem; margin-bottom: 6px;}
+#footerArea p:nth-last-of-type(1) {margin-top:20px;}
+#footerArea .logo{width:200px; height:45px; margin:0 auto 30px; background: url(../images/logo.png) center center no-repeat;}
+
+#footerArea #topMove {display: block; width:100px; padding: 10px 0; color:#fff; text-align: center; border: 4px solid #fff; position:fixed; right: 5%; bottom:10%; text-decoration: none; border-radius: 5px; transition: all .3s;}
+#footerArea #topMove:hover {background:#fff; color:#333;}
+
+
+
+/* 일반pc */
+@media screen and (max-width:1199px) {
+
+}
+
+/* 테블릿 */
+@media screen and (max-width:991px) {
+  /* #content .design .row>img {width:100%;} */
+
+
+}
+
+/* 소형테블릿 */
+@media screen and (max-width:767px) {
+  a.navbar-brand {width: 100px; background: url(../images/logo_small.png) 0 center no-repeat;}
+  .navbar-nav>li>a {padding: 20px 0 20px 20px;}
+  .carousel-indicators {bottom: 10%;}
+  #content .model .container a dl dt {padding-top: 0;}
+  #content .model .container a:nth-of-type(n+1) dl {float:right;}
+
+  #content .design .bg_box p {text-align: center; font-size: 1.500em; padding: 5% 10%; background: url(../images/design_bg.jpg) center center no-repeat; background-attachment:unset;}
+
+  #content .about img {width:100%;}
+  #content .about .tab-content dt {padding-top: 30px;}
+
+  #footerArea #topMove {position:absolute; right:5%; top:-80px; border-radius: 0; border:none; margin:0; background: #000; border-radius: 20px; height: 50px;}
+  #footerArea #topMove:hover {background: #000; color:#fff;}
+  /* #content .about ul.nav-tabs li:nth-of-type(n+5) {display: none;} */
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  .carousel-indicators {bottom: 4%;}
+  #content .model .container a img {width:100%;}
+  #content .model .container a dd {display:none;}
+  #content .model .container a dl {width:100%;}
+  
+  /* #content .about ul.nav-tabs li:nth-of-type(n+4) {display: none;} */
+
+}

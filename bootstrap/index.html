@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aston Martin</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+
+
+
+    <script>
+        // <![CDATA[
+        try {
+            window.addEventListener('load', function () {
+                setTimeout(scrollTo, 0, 0, 1);
+            }, false);
+        } catch (e) { }
+	// ]]>
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="100">
+    <div id="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="#navbar">글로벌 네비게이션 바로가기</a>
+    </div>
+
+    <div class="wrap">
+        <div class="container-fluid">
+            <header id="headerArea">
+                <h1 class="hidden">Aston martin</h1>
+
+                <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+                    <h2 class="hidden">Global nav</h2>
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".bs-example-js-navbar-scrollspy">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"><span class="hidden">로고이미지</span></a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy navbar-right">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#model">Model</a></li>
+                                <li><a href="#design">Design</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                                <li><a href="#menu1">About</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div>
+                </nav>
+
+            </header>
+
+            <div class="main_visual">
+                <!-- visual -->
+                <div id="carousel-example-generic" class="carousel slide main_visual" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li class="second" data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="./images/bg1.jpg" alt="background image1">
+                        </div>
+                        <div class="item">
+                            <img src="./images/bg2.jpg" alt="background image2">
+                        </div>
+                        <div class="item">
+                            <img src="./images/bg3.jpg" alt="background image3">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <article id="content">
+                <h2 class="hidden">본문 콘텐츠영역</h2>
+                <div class="scrollcontent">
+
+                    <div class="model">
+                        <!-- https://configurator.astonmartin.com/US/model-select/AM6/AM636F -->
+
+                        <h3 id="model">Model</h3>
+                        <p>
+                            ASTON MARTIN LAGONDA IS THE WORLD’S ONLY INDEPENDENT LUXURY CAR GROUP WITH OVER 100 YEARS OF
+                            DESIGN AND AUTOMOTIVE EXCELLENCE.
+                        </p>
+
+                        <div class="container">
+                            <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#bs-example-modal-lg1">
+                                <img src="./images/db11.png" alt="db11">
+                                <dl>
+                                    <dt>DB11</dt>
+                                    <dd>The iconic Grand Tourer, DB11 unites beauty and performance to create a
+                                        breathtaking driving experience.</dd>
+                                </dl>
+                            </a>
+
+                            <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#bs-example-modal-lg2">
+
+                                <img src="./images/dbs.png" alt="dbs">
+                                <dl>
+                                    <dt>DBS</dt>
+                                    <dd>For over half a century, the name DBS has meant just one thing: the ultimate
+                                        production Aston Martin.</dd>
+                                </dl>
+                            </a>
+
+                            <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#bs-example-modal-lg3">
+                                <img src="./images/vantage.png" alt="vantage">
+                                <dl>
+                                    <dt>VANTAGE</dt>
+                                    <dd>Vantage is raw and insinctive, unwavering in is singular purpose: to overwhelm
+                                        the senses through its world-renowned design, agile performance and dedicated
+                                        craftsmanship.</dd>
+                                </dl>
+                            </a>
+
+                            <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#bs-example-modal-lg4">
+                                <img src="./images/dbx.png" alt="dbx">
+                                <dl>
+                                    <dt>DBX</dt>
+                                    <dd>Our first SUV, DBX, is a kind of Aston Martin, one founded on the principles of
+                                        beauty, luxury and driving dynamics. Ready to go anywhere, it’s powered by the
+                                        spirit of adventure.</dd>
+                                </dl>
+                            </a>
+
+                            <a href="javascript:void(0);" class="more">Show more</a>
+
+                            <!-- Modal -->
+
+                            <div class="modal fade" id="bs-example-modal-lg1" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title">DB11</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <a class="col-xs-4" href="javascript:void(0);"><img src="./images/db11_v12_coupe.png" alt="db11 v12 coupe image"></a>
+                                                <a class="col-xs-4" href="javascript:void(0);"><img src="./images/db11_v8_coupe.png" alt="db11 v8 coupe image"></a>
+                                                <a class="col-xs-4" href="javascript:void(0);"><img src="./images/db11_v8_volante.png" alt="db11 v8 volante image"></a>
+                                            </div>
+
+                                            <ul class="view_list">
+                                                <li class="row">
+                                                    <img class="col-xs-12" src="./images/db11_v12_coupe.png" alt="big image">
+                                                    <dl class="row">
+                                                        <dt class="col-xs-12">V12 Coupe</dt>
+                                                        <dt class="col-xs-3">Speed</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 89%;" aria-valuenow="197" aria-valuemin="0" aria-valuemax="220">
+                                                                    197<span>mph</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                        <dt class="col-xs-3">Power</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 76%;" aria-valuenow="528" aria-valuemin="0" aria-valuemax="700">
+                                                                    528<span>bhp</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                </li>
+
+                                                <li class="row">
+                                                    <img class="col-xs-12" src="./images/db11_v8_coupe.png"
+                                                        alt="big image">
+                                                    <dl class="row">
+                                                        <dt class="col-xs-12">V8 Coupe</dt>
+                                                        <dt class="col-xs-3">Speed</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 87%;" aria-valuenow="192" aria-valuemin="0" aria-valuemax="220">
+                                                                    192<span>mph</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                        <dt class="col-xs-3">Power</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 76%;" aria-valuenow="528" aria-valuemin="0" aria-valuemax="700">
+                                                                    528<span>bhp</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                </li>
+
+                                                <li class="row">
+                                                    <img class="col-xs-12" src="./images/db11_v8_volante.png"
+                                                        alt="big image">
+                                                    <dl class="row">
+                                                        <dt class="col-xs-12">V8 Volante</dt>
+                                                        <dt class="col-xs-3">Speed</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 87%;" aria-valuenow="192" aria-valuemin="0" aria-valuemax="220">
+                                                                    192<span>mph</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                        <dt class="col-xs-3">Power</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 76%;" aria-valuenow="528" aria-valuemin="0" aria-valuemax="700">
+                                                                    528<span>bhp</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="bs-example-modal-lg2" tabindex="-1" role="dialog"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span
+                                                    aria-hidden="true">&times;</span><span
+                                                    class="sr-only">Close</span></button>
+                                            <h4 class="modal-title">DBS</h4>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <div class="row">
+                                                <a class="col-xs-6" href="javascript:void(0);"><img
+                                                        src="./images/dbs_coupe.png" alt="db11 v12 coupe image"></a>
+                                                <a class="col-xs-6" href="javascript:void(0);"><img
+                                                        src="./images/dbs_volante.png" alt="db11 v8 coupe image"></a>
+                                            </div>
+
+                                            <ul class="view_list">
+                                                <li class="row">
+                                                    <img class="col-xs-12" src="./images/dbs_coupe.png" alt="big image">
+                                                    <dl class="row">
+                                                        <dt class="col-xs-12">DBS Coupe</dt>
+                                                        <dt class="col-xs-3">Speed</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 96%;" aria-valuenow="211" aria-valuemin="0" aria-valuemax="220">
+                                                                    211<span>mph</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                        <dt class="col-xs-3">Power</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="715" aria-valuemin="0" aria-valuemax="720">
+                                                                    715<span>bhp</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                </li>
+
+                                                <li class="row">
+                                                    <img class="col-xs-12" src="./images/dbs_volante.png" alt="big image">
+                                                    <dl class="row">
+                                                        <dt class="col-xs-12">DBS Volante</dt>
+                                                        <dt class="col-xs-3">Speed</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 96%;" aria-valuenow="211" aria-valuemin="0" aria-valuemax="220">
+                                                                    211<span>mph</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                        <dt class="col-xs-3">Power</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="715" aria-valuemin="0" aria-valuemax="720">
+                                                                    715<span>bhp</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                </li>
+
+                                                <li class="row">
+                                                    <img class="col-xs-12" src="./images/db11_v8_volante.png" alt="big image">
+                                                    <dl class="row">
+                                                        <dt class="col-xs-12">V8 Volante</dt>
+                                                        <dt class="col-xs-3">Speed</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 87%;" aria-valuenow="192" aria-valuemin="0" aria-valuemax="220">
+                                                                    192<span>mph</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                        <dt class="col-xs-3">Power</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 76%;" aria-valuenow="528" aria-valuemin="0" aria-valuemax="700">
+                                                                    528<span>bhp</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="bs-example-modal-lg3" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title">Vantage</h4>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <div class="row">
+                                                <a class="col-xs-3" href="javascript:void(0);"><img src="./images/vatage_coupe.png" alt="vantage coupe image"></a>
+                                                <a class="col-xs-3" href="javascript:void(0);"><img src="./images/vatage_coupe_f1_edition.png" alt="vantage coupe f1 edition image"></a>
+                                                <a class="col-xs-3" href="javascript:void(0);"><img src="./images/vatage_roadster.png" alt="vantage roadster image"></a>
+                                                <a class="col-xs-3" href="javascript:void(0);"><img src="./images/vatage_roadster_f1_edition.png" alt="vantage roadster f1 edition image"></a>
+                                            </div>
+
+                                            <ul class="view_list">
+                                                <li class="row">
+                                                    <img class="col-xs-12" src="./images/vatage_coupe.png"
+                                                        alt="big image">
+                                                    <dl class="row">
+                                                        <dt class="col-xs-12">Vantage Coupe</dt>
+                                                        <dt class="col-xs-3">Speed</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 89%;" aria-valuenow="195" aria-valuemin="0" aria-valuemax="220">
+                                                                    195<span>mph</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                        <dt class="col-xs-3">Power</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 91%;" aria-valuenow="503" aria-valuemin="0" aria-valuemax="550">
+                                                                    503<span>bhp</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                </li>
+
+                                                <li class="row">
+                                                    <img class="col-xs-12" src="./images/vatage_coupe_f1_edition.png" alt="big image">
+                                                    <dl class="row">
+                                                        <dt class="col-xs-12">Vantage Coupe F1 Edition</dt>
+                                                        <dt class="col-xs-3">Speed</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 86%;" aria-valuenow="190" aria-valuemin="0" aria-valuemax="220">
+                                                                    190<span>mph</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                        <dt class="col-xs-3">Power</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 91%;" aria-valuenow="503" aria-valuemin="0" aria-valuemax="550">
+                                                                    503<span>bhp</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                </li>
+
+                                                <li class="row">
+                                                    <img class="col-xs-12" src="./images/vatage_roadster.png" alt="big image">
+                                                    <dl class="row">
+                                                        <dt class="col-xs-12">Vantage Roadster</dt>
+                                                        <dt class="col-xs-3">Speed</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 89%;" aria-valuenow="195" aria-valuemin="0" aria-valuemax="220">
+                                                                    195<span>mph</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                        <dt class="col-xs-3">Power</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 96%;" aria-valuenow="527" aria-valuemin="0" aria-valuemax="550">
+                                                                    527<span>bhp</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                </li>
+
+                                                <li class="row">
+                                                    <img class="col-xs-12" src="./images/vatage_roadster_f1_edition.png" alt="big image">
+                                                    <dl class="row">
+                                                        <dt class="col-xs-12">Vantage Roadster F1 Edition</dt>
+                                                        <dt class="col-xs-3">Speed</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 86%;" aria-valuenow="190" aria-valuemin="0" aria-valuemax="220">
+                                                                    190<span>mph</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                        <dt class="col-xs-3">Power</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 96%;" aria-valuenow="527" aria-valuemin="0" aria-valuemax="550">
+                                                                    527<span>bhp</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="bs-example-modal-lg4" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title">DBX</h4>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <div class="row">
+                                                <a class="col-xs-6" href="javascript:void(0);"><img
+                                                        src="./images/dbx_sub1.png" alt="vantage coupe image"></a>
+                                                <a class="col-xs-6" href="javascript:void(0);"><img
+                                                        src="./images/dbx_sub2.png"
+                                                        alt="vantage coupe f1 edition image"></a>
+                                            </div>
+
+                                            <ul class="view_list">
+                                                <li class="row">
+                                                    <img class="col-xs-12" src="./images/dbx_sub1.png" alt="big image">
+                                                    <dl class="row">
+                                                        <dt class="col-xs-12">DBX</dt>
+                                                        <dt class="col-xs-3">Speed</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 91%;" aria-valuenow="181" aria-valuemin="0" aria-valuemax="200">
+                                                                    181<span>mph</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                        <dt class="col-xs-3">Power</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuenow="542" aria-valuemin="0" aria-valuemax="700">
+                                                                    542<span>bhp</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                </li>
+
+                                                <li class="row">
+                                                    <img class="col-xs-12" src="./images/dbx_sub2.png" alt="big image">
+                                                    <dl class="row">
+                                                        <dt class="col-xs-12">DBX 707</dt>
+                                                        <dt class="col-xs-3">Speed</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 97%;" aria-valuenow="193" aria-valuemin="0" aria-valuemax="200">
+                                                                    193<span>mph</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                        <dt class="col-xs-3">Power</dt>
+                                                        <dd class="col-xs-8">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="697" aria-valuemin="0" aria-valuemax="700">
+                                                                    697<span>bhp</span>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="design">
+                        <!-- https://www.astonmartin.com/en-us/q-by-aston-martin -->
+                        <h3 id="design">Design</h3>
+                        <p>
+                            A range of unique enhancements have been created to allow you to personalise your Aston Martin beyond the scope of the core option range.
+                        </p>
+
+                        <div class="bg_box">
+                            <p>
+                                Specially designed and engineered by Aston Martin’s in-house bespoke division, distinctive elements have been designed to further enhance the power, elegance & beauty of your Aston Martin.
+                            </p>
+                        </div>
+
+                        <div class="container">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                Q COLLECTION
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <p>
+                                                A range of unique enhancements have been created to allow you to personalise your Aston Martin beyond the scope of the core option range. Specially designed and engineered by Aston Martin’s in-house bespoke division, distinctive elements have been designed to further enhance the power, elegance & beauty of your Aston Martin.
+                                            </p>
+                                            <div class="row">
+                                                <img class="col-sm-4 col-xs-12" src="./images/collection_01.jpg" alt="collection image 1">
+                                                <img class="col-sm-4 col-xs-12" src="./images/collection_02.jpg" alt="collection image 2">
+                                                <img class="col-sm-4 hidden-xs" src="./images/collection_03.jpg" alt="collection image 3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                                Q COMMISSION
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                The second stage of our enhanced offering is ‘Q by Aston Martin – Commission’, a step into the world of the truly bespoke, individual sports car. A journey that involves a personal collaboration with our design team.
+                                            </p>
+                                            <div class="row">
+                                                <img class="col-sm-6 col-xs-12" src="./images/commission_01.jpg" alt="commission image 1">
+                                                <img class="col-sm-6 col-xs-12" src="./images/commission_02.jpg" alt="commission image 2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                                ASTON MARTIN WINGS SERIES
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>
+                                                Aston Martin has a long and proud association with aviation and the Royal Air Force. Its three manufacturing locations are sited on the former RAF Stations at Gaydon, Wellesbourne and St Athan. Active runways continue to operate at Wellesbourne and St Athan and indeed the new DBX production facility in St Athan has been built inside former RAF hangers.
+                                            </p>
+                                            <p>
+                                                This heritage and strong connection to the RAF has lead Aston Martin to bring its aviation projects together under Aston Martin Wings, an exciting program which will see Q by Aston Martin deliver further limited edition models linked to aviation over the coming years.
+                                            </p>
+                                            <div class="row">
+                                                <img class="col-sm-4 col-xs-12" src="./images/wings_01.jpg" alt="wings image 1">
+                                                <img class="col-sm-4 col-xs-12" src="./images/wings_02.jpg" alt="wings image 2">
+                                                <img class="col-sm-4 col-xs-12 hidden-xs" src="./images/wings_03.jpg" alt="wings image 3">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" class="more">Show more</a>
+                    </div>
+
+                    <div class="gallery">
+
+                        <h3 id="gallery">Gallery</h3>
+
+                        <p>
+                            The word Valhalla is rooted in ancient mythology, but Aston Martin’s interpretation of it has just moved closer to reality.
+                        </p>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4 col-lg-3 hidden-xs">
+                                    <a href="javascript:void(0);" class="thumbnail">
+                                        <img src="./images/gallery_01.jpg" alt="gallery image 1">
+                                        <p>
+                                            <span>Aston Martin</span>
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <a href="javascript:void(0);" class="thumbnail">
+                                        <img src="./images/gallery_02.jpg" alt="gallery image 2">
+                                        <p>
+                                            <span>Aston Martin</span>
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-3 hidden-xs">
+                                    <a href="javascript:void(0);" class="thumbnail">
+                                        <img src="./images/gallery_03.jpg" alt="gallery image 3">
+                                        <p>
+                                            <span>Aston Martin</span>
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-3 hidden-xs">
+                                    <a href="javascript:void(0);" class="thumbnail">
+                                        <img src="./images/gallery_04.jpg" alt="gallery image 4">
+                                        <p>
+                                            <span>Aston Martin</span>
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <a href="javascript:void(0);" class="thumbnail">
+                                        <img src="./images/gallery_05.jpg" alt="gallery image 5">
+                                        <p>
+                                            <span>Aston Martin</span>
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <a href="javascript:void(0);" class="thumbnail">
+                                        <img src="./images/gallery_06.jpg" alt="gallery image 6">
+                                        <p>
+                                            <span>Aston Martin</span>
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-3 hidden-md">
+                                    <a href="javascript:void(0);" class="thumbnail">
+                                        <img src="./images/gallery_07.jpg" alt="gallery image 7">
+                                        <p>
+                                            <span>Aston Martin</span>
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-3 hidden-md hidden-xs">
+                                    <a href="javascript:void(0);" class="thumbnail">
+                                        <img src="./images/gallery_08.jpg" alt="gallery image 8">
+                                        <p>
+                                            <span>Aston Martin</span>
+                                        </p>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <a href="javascript:void(0);" class="more">Show more</a>
+                    </div>
+
+                    <div class="about">
+                        <!-- https://www.astonmartinlagonda.com/about-us -->
+                        <h3 id="menu1">About</h3>
+
+                        <p>
+                            <span>
+                                Aston Martin’s vision is to be the world’s most desirable, ultra-luxury British brand,
+                                creating the most exquisitely addictive performance cars.
+                            </span>
+                            <span>
+                                2020 saw Lawrence Stroll become the company’s Executive Chairman, alongside significant
+                                new investment, a move that led to Aston Martin’s return to the pinnacle of motorsport
+                                with the Aston Martin Cognizant Formula One™ Team and commenced new era for the iconic
+                                British marque.
+                            </span>
+                        </p>
+
+                        <div class="container">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#home" data-toggle="tab">GOVERNANCE</a></li>
+                                <li><a href="#tab1" data-toggle="tab">STRATEGY</a></li>
+                                <li><a href="#tab2" data-toggle="tab">HERITAGE</a></li>
+                                <li class="hidden-xs"><a href="#tab3" data-toggle="tab">PARTNERSHIPS</a></li>
+                                <li class="hidden-xs hidden-sm"><a href="#tab4" data-toggle="tab">LOCATIONS</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="home">
+                                    <div class="row">
+                                        <dl class="col-sm-6 col-xs-12">
+                                            <dt>GOVERNANCE</dt>
+                                            <dd>
+                                                The Corporate Officer team of Aston Martin Lagonda Limited is responsible for the efficient running of the day-to-day operations and governance of the Group.
+                                            </dd>
+                                        </dl>
+                                        <img class="col-sm-6 col-sm-12" src="./images/about_01.jpg" alt="GOVERNANCE image">
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="tab1">
+                                    <div class="row">
+                                        <dl class="col-sm-6 col-xs-12">
+                                            <dt>STRATEGY</dt>
+                                            <dd>
+                                                Project Horizon is the roadmap to delivering operational excellence, agility and efficiency throughout every aspect of Aston Martin Lagonda.
+                                            </dd>
+                                        </dl>
+                                        <img class="col-sm-6 col-sm-12" src="./images/about_02.jpg" alt="STRATEGY image">
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="tab2">
+                                    <div class="row">
+                                        <dl class="col-sm-6 col-xs-12">
+                                            <dt>HERITAGE</dt>
+                                            <dd>
+                                                Lagonda remains faithful to the forward thinking, ever adventurous spirit of Wilbur Gunn, the Anglo-American engineer and entrepreneur who founded Lagonda in a greenhouse at his home in Staines to the west of London in 1904.
+                                            </dd>
+                                        </dl>
+                                        <img class="col-sm-6 col-xs-12" src="./images/about_03.jpg" alt="HERITAGE image">
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="tab3">
+                                    <div class="row">
+                                        <dl class="col-sm-6 col-sm-12">
+                                            <dt>PARTNERSHIPS</dt>
+                                            <dd>
+                                                Through partnerships we can create products and experiences with a common passion for perfection, an eye for beauty and unequalled craftsmanship.
+                                            </dd>
+                                        </dl>
+                                        <img class="col-sm-6 col-xs-12" src="./images/about_04.jpg" alt="PARTNERSHIPS image">
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="tab4">
+                                    <div class="row">
+                                        <dl class="col-sm-6 col-xs-12">
+                                            <dt>LOCATIONS</dt>
+                                            <dd>
+                                                Aston Martin Lagonda continues to expand its presence around the world, with company infrastructure now the largest in its history and companywide employment set to reach 5,000 by 2022.
+                                            </dd>
+                                        </dl>
+                                        <img class="col-sm-6 col-xs-12" src="./images/about_05.jpg" alt="LOCATIONS image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" class="more">Show more</a>
+                    </div>
+                </div>
+            </article>
+
+            <footer id="footerArea">
+                <div class="footer_inner">
+                    <a href="#" id="topMove">Top</a>
+                    <div class="logo"></div>
+                    <address>
+                        ASTON MARTIN LAGONDA GLOBAL HOLDINGS PLC, ENGLAND AND WALES
+                    </address>
+                    <p>REGISTERED NUMBER: 06067176</p>
+                    <p>REGISTERED OFFICE: ASTON MARTIN, BANBURY ROAD, GAYDON, WARWICK, CV35 0DB</p>
+                    <p>&copy; ASTON MARTIN LAGONDA 2022</p>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script>
+        $('.carousel').carousel()
+    </script>
+</body>
+
+</html>
