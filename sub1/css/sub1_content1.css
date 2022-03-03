@@ -1,0 +1,16 @@
+/* sub page의 content area */
+
+
+#content .content_area div p {padding:0; font-family: 'Nanum Gothic';}
+
+#content .visual_box {width:500px; float:left;}
+#content .visual_box p {font-size: 1.222em; margin-top: 30px;}
+#content .visual_box p strong {font-size: 1.334em; font-weight: 400;}
+
+#content .text_box {width:600px; float:right;}
+#content .text_box p {font-size: 1.111em; line-height: 2em; text-align: justify; margin-bottom: 40px;}
+#content .text_box p:last-of-type {margin-bottom: 0;}
+
+
+
+

@@ -1,0 +1,84 @@
+{
+  "staff" : [
+    {
+      "name" : "이용배",
+      "rank" : "대표이사",
+      "date" : "20. 03",
+      "term" : 3,
+      "pic" : "staff_1.jpg"
+    },
+    {
+      "name" : "김두홍",
+      "rank" : "재경본부장",
+      "date" : "19. 03",
+      "term" : 3,
+      "pic" : "staff_2.jpg"
+    },
+    {
+      "name" : "김정훈",
+      "rank" : "철도사업본부장",
+      "date" : "21. 03",
+      "term" : 3,
+      "pic" : "staff_3.jpg"
+    },
+    {
+      "name" : "정태학",
+      "rank" : "감사위원회 위원장",
+      "date" : "20. 03",
+      "term" : 3,
+      "pic" : "staff_4.jpg"
+    },
+    {
+      "name" : "여형구",
+      "rank" : "윤리위원회 위원장",
+      "date" : "19. 03",
+      "term" : 3,
+      "pic" : "staff_5.jpg"
+    },
+    {
+      "name" : "이원희",
+      "rank" : "감사위원회 위원",
+      "date" : "19. 03",
+      "term" : 3,
+      "pic" : "staff_6.jpg"
+    },
+    {
+      "name" : "전상경",
+      "rank" : "윤리위원회 위원",
+      "date" : "19. 03",
+      "term" : 3,
+      "pic" : "staff_7.jpg"
+    }
+  ],
+
+  "career" : [
+    {
+      "former":"현대차증권 대표이사",
+      "incumbent":""
+    },
+    {
+      "former":"현대다이모스 재경본부장",
+      "incumbent":""
+    },
+    {
+      "former":"현대로템 해외사업실장",
+      "incumbent":""
+    },
+    {
+      "former":"법무법인 율촌 변호사",
+      "incumbent":"수원지방법원 부장판사"
+    },
+    {
+      "former":"평창올림픽 사무총창",
+      "incumbent":"법무법인 김앤장 고문"
+    },
+    {
+      "former":"서울행정학회 회장",
+      "incumbent":"한경대학교 행정학과 교수"
+    },
+    {
+      "former":"한국재무학회 부회장",
+      "incumbent":"한양대학교 경영학과 교수"
+    }
+  ]
+}

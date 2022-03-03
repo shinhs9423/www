@@ -1,0 +1,241 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>현대로템</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- css -->
+  <link rel="stylesheet" href="./common/css/common.css">
+  <link rel="stylesheet" href="./maincss/main.css">
+
+  <!-- 벤더 프리픽스 -->
+  <script src="./common/js/prefixfree.min.js"></script>
+  <!-- pop up -->
+  <script src="./mainjs/mainpopup.js"></script>
+
+</head>
+
+<body>
+
+  <? include "./common/main_header.html" ?>
+
+
+  <!-- visual -->
+  <div class="visual">
+    <div class="main">
+      <div class="gallery">
+        <ul>
+          <li class="link1"><a href="#"><img src="./images/visual_01.jpg" alt=''><span>사람과 사람을 이어주는 행복한 기술</span></a></li>
+          <li class="link2"><a href="#"><img src="./images/visual_02.jpg" alt=''><span>미래 교통수단의 새로운 기술</span></a></li>
+          <li class="link3"><a href="#"><img src="./images/visual_03.jpg" alt=''><span>더 나은 내일을 위한 끝없는 움직임</span></a></li>
+          <li class="link4"><a href="#"><img src="./images/visual_04.jpg" alt=''><span>세계를 향해 나아가는 힘찬 전진</span></a></li>
+          <li class="link5"><a href="#"><img src="./images/visual_05.jpg" alt=''><span>실패를 두려워하지 않는 도전</span></a></li>
+        </ul>
+      </div>
+
+      <div class="dock">
+        <span class="mbutton btn1"></span>
+        <span class="mbutton btn2"></span>
+        <span class="mbutton btn3"></span>
+        <span class="mbutton btn4"></span>
+        <span class="mbutton btn5"></span>
+        <span class="ps"><i class="fas fa-pause"><span class="hidden">정지버튼</span></i></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- content -->
+  <article id="content">
+    <div class="text"></div>
+    <h2 class="hidden">본문 콘텐츠 영역</h2>
+
+    <div class="company">
+      <h3>기업소개</h3>
+      <p>끊임없는 변화와 도전으로 가치있는 내일을 만들어 갑니다</p>
+
+      <div class="eventSlideMenu">
+        <ul>
+           <li class="img01 eventMenu">
+              <span class="buttonMenu01"></span>
+              <p class="title">Foundation</p>
+              <div class="bg_box">
+                <p><span class="hidden">따옴표</span><i class="fas fa-quote-left"></i></p>
+                <dl>
+                  <dt>국가 기간 산업의 밑거름</dt>
+                  <dd>
+                      현대자동차그룹에 편입된 현대로템은 세계 최고 수준의 기술력과 품질을 기반으로 단기간에 세계가 주목하는 종합 철도 기업으로 자리매김했습니다.
+                  </dd>
+                </dl>
+                <p><span class="hidden">따옴표</span><i class="fas fa-quote-right"></i></p>
+              </div>
+           </li>
+  
+           <li class="img02 eventMenu">
+              <span class="buttonMenu02"></span>
+              <p class="title">Technology</p>
+              <div class="bg_box">
+                <p><span class="hidden">따옴표</span><i class="fas fa-quote-left"></i></p>
+                <dl>
+                  <dt>현대로템의 독자적인 기술력</dt>
+                  <dd>
+                      해외 시장의 수요와 환경에 대응하기 위해 자기부상열차, 무가선 저상트램 등 친환경 첨단 철도차량의 상용화에 박차를 가하는 한편, 시스템 엔지니어링과 전장품사업, 유지보수, 운영 등
+                      턴키사업 분야의 글로벌 시장 진출에도 힘쓰고 있습니다.
+                  </dd>
+                </dl>
+                <p><span class="hidden">따옴표</span><i class="fas fa-quote-right"></i></p>
+              </div>
+           </li>
+  
+           <li class="img03 eventMenu">
+             <span class="buttonMenu03"></span>
+             <p class="title">Global</p>
+             <div class="bg_box">
+                <p><span class="hidden">따옴표</span><i class="fas fa-quote-left"></i></p>
+                <dl>
+                  <dt>중공업의 글로벌 리딩 컴퍼니</dt>
+                  <dd>
+                      현대로템은 2013년 10월 30일 상장사로 이름을 올렸습니다. 현대로템은 상장을 기점으로 각 사업부별 경쟁력을 더욱 확고히 할 것입니다.
+                  </dd>
+                </dl>
+                <p><i class="fas fa-quote-right"></i></p>
+              </div>
+           </li>
+  
+        </ul>
+      </div>
+      <a class="more_btn" href="./sub1/sub1_2.html">more<i class="fas fa-chevron-right"></i></a>
+
+    </div>
+
+    <div class="business">
+      <h3>사업분야</h3>
+      <p>현대로템의 핵심 사업부문을 소개합니다</p>
+      <ul>
+        <li class="rail_solution">
+          <dl>
+            <dt><span>R</span>ail <span>S</span>olution</dt>
+            <dd>미래 철도 교통 시대를 여는 새로운 패러다임을 만듭니다.</dd>
+            <dd><a class="more_btn" href="./sub2/sub2_1.html">more<i class="fas fa-chevron-right"></i></a></dd>
+          </dl>
+          <img src="./images/business_01.jpg" alt="레일솔루션 사진">
+        </li>
+
+        <li class="defense_solution">
+          <dl>
+            <dt><span>D</span>efense <span>S</span>olution</dt>
+            <dd>첨단기술력으로 더욱 안전한 우리의 미래를 약속합니다.</dd>
+            <dd><a class="more_btn" href="./sub2/sub2_2.html">more<i class="fas fa-chevron-right"></i></a></dd>
+          </dl>
+          <img src="./images/business_02.jpg" alt="디펜스솔루션 사진">
+        </li>
+
+        <li class="eco_plant">
+          <dl>
+            <dt><span>E</span>co <span>P</span>lant</dt>
+            <dd>한 차원 앞선 플랜트 기술로 풍요로운 미래를 선도해갑니다.</dd>
+            <dd><a class="more_btn" href="./sub2/sub2_3.html">more<i class="fas fa-chevron-right"></i></a></dd>
+          </dl>
+          <img src="./images/business_03.jpg" alt="에코플랜트 사진">
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="management">
+      <h3>정도경영</h3>
+      <p>현대로템의 ESG 전략 입니다</p>
+      <ul>
+        <li>
+          <dl>
+            <dt>Planet</dt>
+            <dd>경영활동이 초래할 수 있는 부정적인 환경영향 최소화</dd>
+          </dl>
+        </li>
+
+        <li>
+          <dl>
+            <dt>People</dt>
+            <dd>임직원과 지역 및 글로벌 사회구성원 모두 함께 책임있게 공존하는 노력</dd>
+          </dl>
+        </li>
+
+        <li>
+          <dl>
+            <dt>Prosperity</dt>
+            <dd>다 함께 번영하는 친환경, 스마트, 안전한 미래를 창조</dd>
+          </dl>
+        </li>
+      </ul>
+      <div>
+        <p>Green Innovation, Responsible Partner, Climate Smart 지향</p>
+        <a href="./sub5/sub5_1.html">more</a>
+      </div>
+    </div>
+
+    <? include "./lib/func.php" ?>
+    <div class="notice">
+      <h3>보도자료</h3>
+      <p>현대로템의 새로운 소식입니다</p>
+      <? latest_article("concert", 3, 30, 50); ?>
+      <a class="more_btn" href="./concert/list.php">more<i class="fas fa-chevron-right"></i></a>
+    </div>
+
+    <div class="recruit boxMove">
+      <div class="recruit_inner">
+        <h3>인재채용</h3>
+        <dl>
+          <dt><span>T</span>ogether <span>B</span>etter Future</dt>
+          <dd>‘인간을 이롭게 세상을 이롭게’ 우리와 함께 더 넓은 희망으로 나아갈 여러분을 초대합니다. </dd>
+          <dd><a class="more_btn" href="./sub6/sub6_1.html">more<i class="fas fa-chevron-right"></i></a></dd>
+        </dl>
+      </div>
+    </div>
+
+  </article>
+
+  <? include "./common/main_footer.html" ?>
+
+  <!-- 공지사항 팝업 -->
+  <div id="showimage" style="z-index:99;position:absolute;width:322px;right:300px;top:300px;">
+    <script>
+      function closeWin() {
+        var chk = document.getElementById('Notice')
+        if (chk.checked) {
+          setCookie("Notice", "done", 1); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+        }
+      }
+      if (getCookie("Notice") == "done") {
+        hidebox();
+      }
+    </script>
+    <div>
+      <img src="popup/pop.png"
+        alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다." />
+    </div>
+    <div style="font-size:12px;text-align:center;color:#fff;">
+      <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을
+        열지 않음.</label>
+      <a href="#" onclick="closeWin();hidebox();return false;" style="color:#fff;"> [close] </a>
+    </div>
+  </div>
+
+
+  <script src="./mainjs/move.js"></script>
+  <script src="./mainjs/accordion.js"></script>
+  <script src="./mainjs/scroll.js"></script>
+</body>
+
+</html>

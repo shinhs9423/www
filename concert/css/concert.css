@@ -1,0 +1,63 @@
+#content .title_area {margin: 0 auto;}
+
+#content .content_area {}
+#content .content_area form {}
+
+#content .content_area .list_wrap {}
+
+#content .content_area .list_wrap .list_header {overflow: hidden; padding: 50px 0; border:0;}
+
+#content .content_area .list_wrap .list_header select,
+#content .content_area .list_wrap .list_header input {padding: 10px 5px; background:#fff;}
+#content .content_area .list_wrap .list_header input:nth-last-of-type(2) {width:300px;}
+#content .content_area .list_wrap .list_header input:nth-last-of-type(1) {width:80px; padding: 10px; border:2px solid #0a2267; color:#0a2667; border-radius: 4px; background: none; font-weight: 700; position:relative; left:0; top: 2px; transition:all .3s;}
+#content .content_area .list_wrap .list_header input:nth-last-of-type(1):hover {background: #0a2267; color:#fff;}
+
+#content .content_area .list_header>p {text-align: left; margin-bottom: 30px;}
+
+#content .content_area .view_mode {position:relative;}
+#content .content_area .view_mode p {text-align: left; margin-bottom: 20px;}
+#content .content_area .view_mode ul {overflow: hidden; position:absolute; right:0; top:0;}
+#content .content_area .view_mode li {float:left;}
+#content .content_area .view_mode li a {padding: 5px; font-size:1.111em; border: 1px solid #ccc; color:#0a2267; transition: all .3s;}
+#content .content_area .view_mode li a:hover {border:1px solid #0a2267; background:#0a2267; color:#fff;}
+
+#content .content_area .list_wrap .scale_wrap {float:left;}
+#content .content_area .list_wrap .search_wrap {float:right;}
+
+
+/* list_view */
+#content .content_area .list_con {}
+#content .content_area .list_con table {width:100%; margin-bottom:50px;}
+#content .content_area .list_con table thead {}
+#content .content_area .list_con table thead tr {background: #0a2267;  border-radius: 10px;}
+#content .content_area .list_con table thead th:nth-of-type(1) {border-radius: 10px 0 0 10px;}
+#content .content_area .list_con table thead th:nth-last-of-type(1) {border-radius: 0 10px 10px 0;}
+#content .content_area .list_con table thead th {color:#fff; font-weight: 700; padding: 20px;}
+
+#content .content_area .list_con table tbody {}
+#content .content_area .list_con table tbody tr {border-bottom: 1px solid #ccc; }
+#content .content_area .list_con table tbody tr td a {text-align: left; padding-top: 40px; display: block;}
+#content .content_area .list_con table tbody tr td img {width:80px; padding:10px; margin-top:-35px; margin-right:10px; height:80px; background-size: cover;}
+
+#content .content_area .list_con colgroup {}
+#content .content_area .list_con colgroup col:nth-of-type(1) {width:10%;}
+#content .content_area .list_con colgroup col:nth-of-type(2) {width:45%;}
+#content .content_area .list_con colgroup col:nth-of-type(3) {width:15%;}
+#content .content_area .list_con colgroup col:nth-of-type(4) {width:10%;}
+#content .content_area .list_con colgroup col:nth-of-type(5) {width:10%;}
+
+
+
+#content .btn_area {overflow: hidden;}
+
+#content .list_page_btn {overflow: hidden; width:max-content; margin: 0 auto;}
+#content .list_page_btn a {transition: all .3s; border-radius: 50%;}
+#content .list_page_btn a:hover {background: rgba(255,0,0,.3);  font-weight:700;}
+#content .list_page_btn i {font-size:1.222em;}
+#content .list_page_btn>* {float:left; padding:5px 10px;}
+
+#content .btn_area ul {float:right;}
+#content .btn_area ul li {width: 100px; margin:0 10px; float:left;}
+#content .btn_area ul li a {margin:5px; padding: 10px 0; width:100px; float: left; border:2px solid #0a2267; color:#0a2267; font-weight: 700; border-radius: 10px; transition:all .3s;}
+#content .btn_area ul li:hover a {background: #0a2267; color:#fff;}

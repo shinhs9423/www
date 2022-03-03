@@ -1,0 +1,29 @@
+body{background: #f4f4f4;}
+/* header {padding: 20px 0;} */
+/* header h1{width:150px; margin: 0 auto; } */
+/* header h1 a {display:block; width:150px; height:52px; background: url(../../common/images/header_logo_02.png) 0 0 no-repeat; text-indent: -999px; overflow: hidden; transition: all 1s;} */
+
+#content {width: 800px; margin: 100px auto; font-family: 'Nanum Gothic', sans-serif; background: #fff; border-radius: 50px; box-shadow: 4px 4px 12px 4px rgba(3,3,3,.2); overflow: hidden;}
+/* float */
+#content .left_box {box-sizing: border-box; width:50%; float:left; padding: 40px 50px;}
+#content .left_box img {display:block; margin:0 auto 40px;}
+
+#content .right_box {width:50%; padding:50px 0; float:right; background: linear-gradient(to right, #0a2267, #2f9fbe);}
+
+
+/* id pass 입력창 */
+#content #id_pw_input ul:nth-of-type(1) li {text-align: center; margin: 20px 0;}
+#content #id_pw_input input {box-sizing: border-box; padding: 10px 0 10px 10px; width:100%;}
+
+#content .forget {overflow: hidden;}
+#content .forget li {width:50%; float:left; }
+#content .forget li a {padding: 0 10px; color:#999; text-align: center; transition:all .3s}
+#content .forget li a:hover {color:#333; text-shadow: 2px 4px 2px rgba(3,3,3,.2);}
+
+#content .left_box form > input {border:0; background: #0a2267; color:#fff; padding: 10px 0; width: 200px; margin:30px auto; display:block; font-size: 1.111em; border-radius: 20px; box-shadow: 2px 2px 8px 2px rgba(3,3,3,.2); transition: all .3s;}
+#content .left_box form > input:hover {background: #ff0000;}
+
+#content .right_box p {color:#fff; padding:10px; text-align: center; font-size: 1.111em;}
+#content .right_box p span {color:#ff0000; text-shadow:#fff 0 0 10px; }
+#content .right_box a {display:block; background: #fff; color:#0a2267; text-align: center; padding: 10px 0; width: 200px; margin:30px auto; border-radius: 20px; transition: all .3s;}
+#content .right_box a:hover {background: #ff0000; color:#fff;}

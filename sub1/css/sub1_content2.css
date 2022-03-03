@@ -1,0 +1,25 @@
+/* sub page의 content area */
+
+#content .title_area ul li {width:33.33%;}
+
+#content .content_area {}
+#content .content_area ul {}
+#content .content_area li {overflow: hidden; margin-bottom: 100px;}
+#content .content_area li:nth-last-child(1) { margin-bottom: 0;}
+
+#content .content_area li img {transition:all .5s; width: 350px; border-radius: 40px 0; box-shadow: 2px 2px 2px 3px rgba(3,3,3,.2); margin:0 5px 5px;}
+#content .content_area li:hover img {transform: scale(1.1); box-shadow: 0 0 0 0 ;}
+
+#content .content_area li dl {width: 800px; position:relative;}
+
+#content .content_area li:nth-child(odd) dl {float:right;}
+#content .content_area li:nth-child(even) dl {float:left;}
+#content .content_area li:nth-child(odd) img {float:left;}
+#content .content_area li:nth-child(even) img {float:right;}
+
+#content .content_area li dt {font-family: 'Nanum Gothic'; font-size: 1.333em; text-align: left; margin-bottom: 30px;}
+#content .content_area li dt::before {content:''; display: block; width: 5px; height:32px; background: #0a2267; position:absolute; z-index: -1; right:0; top:0; transform: skewX(0); transition: all .5s;}
+#content .content_area li:hover dt {color:#fff;}
+#content .content_area li:hover dt::before {width:800px;}
+
+#content .content_area li dd {font-size: 1.111em; line-height: 1.5em; text-align: justify;}

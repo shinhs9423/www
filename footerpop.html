@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <style>
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    body {
+      font-family: "돋움", Dotum, "굴림", Gulim, sans-serif;
+      font-size: 18px;
+      color: #333;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    address {
+      font-style: normal;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+      display: block;
+    }
+
+    img {
+      border: 0;
+      vertical-align: top;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .family_site {
+      box-sizing: border-box;
+      width: 160px;
+      height: 30px;
+      padding: 5px 0;
+      text-align: center;
+      background: #fff;
+      border: 1px solid #000;
+    }
+
+    .family_site a {
+      display: block;
+      color: #828282;
+    }
+
+    .family_site i {
+      margin-left: 10px;
+      color: #828282;
+    } 
+    .on {
+      display:block;
+    }
+    .off {
+      display:none;
+    }
+  </style>
+
+  <script>
+
+    //슬라이드 메뉴 클릭시 해당 콘텐츠로 스스륵~~~ 이동
+    $('a.family_site').click(function (e) {
+      e.preventDefault(); //href="#" 속성을 막아주는..메소드
+
+      if ($(this).hasClass('on')) {   //첫번째 메뉴를 클릭했냐? 
+        $(this).css('display','none');
+        $(this > ul).removeClass('on');
+        $(this > ul).addClass('off');
+      } else { 
+        $(this).css('display','none');
+        $(this > ul).removeClass('off');
+        $(this > ul).addClass('on');
+       };
+
+    });
+
+
+  </script>
+
+</head>
+
+<body>
+  <div>
+    <a class="family_site" href="#">Family site<i class="fas fa-plus"><span class="hidden">more</span></i></a>
+    <ul>
+      <li><a href="http://www.hyundai.com/kr">현대자동차</a></li>
+    </ul>
+  </div>
+
+  <!-- jquery -->
+  <script src="./common/js/jquery-1.12.4.min.js"></script>
+  <script src="./common/js/jquery-migrate-1.4.1.min.js"></script>
+  <script src="./common/js/fullnav.js"></script>
+  <script src="./common/js/common.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+/* sub page의 content area */
+#content .title_area ul li {width:50%;}
+
+#content .content_area {}
+#content .content_area p:nth-of-type(1) {width:1000px; margin:50px auto 100px; padding:0; font-family: 'Nanum Gothic'; font-size: 1.222em; line-height: 1.5em; text-align: justify;}
+
+#content .content_area .con_list > ul {overflow: hidden;}
+#content .content_area .con_list > ul li {padding-bottom: 200px; overflow: hidden; position:relative;}
+#content .content_area .con_list > ul img {float:left; margin-left: 50px;}
+#content .content_area .con_list > ul dl {box-sizing:border-box; width:700px; padding: 50px 50px; position:absolute; left:0; top:0; margin: 100px 50% 0 450px; font-size: 1.111em; line-height: 2em; text-align: justify; box-shadow: 4px 4px 10px 6px rgba(3,3,3,.1); background: rgba(255,255,255,.95);}
+#content .content_area .con_list > ul dt {font-family: 'Nanum Gothic'; font-size: 1.333em; margin-bottom: 30px;}
+
+#content .content_area table { border-collapse: collapse; width: 1200px; margin-bottom: 100px; text-align: left;}
+#content .content_area table thead { font-family: 'Noto Sans KR'; font-size: 20px; border-collapse: collapse; border-top: 1px solid #999; border-bottom: 1px solid #ccc;}
+#content .content_area table thead th {padding: 10px 0;}
+#content .content_area table thead td {padding-bottom: 10px;}
+#content .content_area table tbody { font-family: 'Nanum Gothic'; font-size: 1em;}
+#content .content_area table tbody tr td { border-bottom: 1px dotted #ccc; padding: 10px 0;}
+#content .content_area table tbody tr:nth-last-of-type(1) td { border-bottom: 1px solid #ccc;}
+
+
+#content .content_area .gallery_box {position:relative; width: 1200px; height: 500px; overflow: hidden; margin-bottom: 100px;}
+#content .content_area .gallery_box ul {overflow: hidden;}
+#content .content_area .gallery_box ul li dl {float: left; box-sizing: border-box; width:600px; height:500px; padding:50px 20px;}
+#content .content_area .gallery_box ul dl:nth-of-type(1) {margin-bottom: 0;}
+
+#content .content_area .gallery_box ul li img {float: right; width:600px; height:500px; background: powderblue;}
+
+
+
+#content .content_area .gallery_box ul li dt {font-family: 'Noto Sans KR'; font-size: 1.667em; margin-bottom: 30px;}
+#content .content_area .gallery_box ul li dd {font-family: 'Nanum Gothic'; font-size: 1em; line-height: 2em; text-align: justify; padding: 0 30px;}
+
+#content .content_area .gallery_box span {overflow: hidden; position:absolute; left: 500px; top:0;}
+#content .content_area .gallery_box span a {display:block; float:left; color:#fff; background: #ccc; width:50px; padding: 10px 0; font-size: 30px; text-align: center;}
+#content .content_area .gallery_box span a:hover {background: #333;}
+
+
+
+

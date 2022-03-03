@@ -1,0 +1,170 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회사소개-기업소개</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="./common/css/sub1common.css">
+  <link rel="stylesheet" href="./css/sub1_content4.css">
+  <!-- 벤더 프리픽스 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+  <!-- 카카오 맵 -->
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=67eefe71cce2ca1676e8315afd96a495"></script>
+  <script src="./js/kakao_map2.js"></script>
+
+</head>
+<body>
+  <? include "../common/sub_header.html" ?>
+    <!-- visual -->
+    <div class="visual">
+      <img src="./common/images/visual.jpg" alt="비주얼이미지">
+      <h3>회사소개</h3>
+    </div>
+    <!-- sub-menu -->
+    <div class="sub_menu">
+      <ul>
+        <li><a href="./sub1_1.html">인사말</a></li>
+        <li><a href="./sub1_2.html">기업소개</a></li>
+        <li><a href="./sub1_3.html">기업연혁</a></li>
+        <li class="current"><a href="sub1_4.html">오시는길</a></li>
+      </ul>
+    </div>
+
+    <!-- content -->
+    <article id="content">
+
+      <div class="title_area">
+
+        <div class="title_area_box">
+
+          <div class="line_map">
+            <i class="fas fa-home"><span class="hidden">home</span></i> &gt; 회사소개 &gt; <strong>오시는 길</strong>
+          </div>
+
+          <h2>오시는 길</h2>
+          <p><span>Global</span> Network를 향해 <span>발전하는</span> 현대로템</p>
+          
+          <div class="tabs">
+            <ul class="tab_menu">
+              <li><a class="tab tab1" href="#">국내</a></li>
+              <li><a class="tab tab2" href="#">해외</a></li>
+            </ul>
+          </div>
+          
+        </div>
+
+      </div>
+
+      <div class="content_area">
+        <div class="tabs">
+          <div class="cont_list inner">
+            <h3 class="hidden">국내</h3>
+            <ul>
+              <li>
+                <div id="mapFirst" style="width:700px; height:500px;"></div>
+                <dl>
+                  <dt>본사</dt>
+                  <dd><span>주소</span> 경기도 의왕시 철도박물관로 37</dd>
+                  <dd><span>전화</span> &#40;031&#41;8090-8114</dd>
+                  <dd><span>팩스</span> &#40;031&#41;596-9775</dd>
+                </dl>
+              </li>
+              <li>
+                <div id="mapSecond" style="width:700px; height:500px;"></div>
+                <dl>
+                  <dt>창원</dt>
+                  <dd><span>주소</span> 경상남도 창원시 성산구 창원대로 488</dd>
+                  <dd><span>전화</span> &#40;055&#41;273-1341</dd>
+                  <dd><span>팩스</span> &#40;055&#41;273-1741</dd>
+                </dl>
+              </li>
+              <li>
+                <div id="mapThird" style="width:700px; height:500px;"></div>
+                <dl>
+                  <dt>당진</dt>
+                  <dd><span>주소</span> 충청남도 당진시 송악읍 북부산업도로 1480</dd>
+                  <dd><span>전화</span> &#40;041&#41;680-0600</dd>
+                  <dd><span>팩스</span> &#40;041&#41;680-0634</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cont_list other">
+            <h3 class="hidden">해외</h3>
+            <ul>
+              <li>
+                <dl>
+                  <dt>미국 법인</dt>
+                  <dd><span>주소</span> 2400 Weccacoe Avenue, Philadelphia, PA19148 </dd>
+                  <dd><span>전화</span> &#43;1-215-227-6836</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>터키 법인</dt>
+                  <dd><span>주소</span> Mithatpasa Mahallesi Ibrahim Kangal Cad. 12/1-2 54100 Adapazari </dd>
+                  <dd><span>전화</span> &#43;90-264-291-4484</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>브라질 법인</dt>
+                  <dd><span>주소</span> Avendia Manuel de Abreu, 2475, Vila Sedenho, 14806-500, Araraquara, SP, Brazil</dd>
+                  <dd><span>전화</span> &#43;55-163508-7943</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>말레이시아 법인</dt>
+                  <dd><span>주소</span> Suite 16C, Level 16 of Vista Tower, The Intermark, No.348, Jalan Tun Razak, 50400
+                    KualaLumpur, Malaysia</dd>
+                  <dd><span>전화</span> &#43;60-3-2181-6500</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>북경 유한공사</dt>
+                  <dd><span>주소</span> 北京市顺义区南法信镇焦各庄村西(Beijingshi Shunyiqu Nanfaxinzhen Jiaogezhuangcunxi)乐铁设备(北京)有限公司,
+                    100300(Letieshebei(Beijing) Youxiangongsi, 100300)</dd>
+                  <dd><span>전화</span> &#43;86-10-6947-6542</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>인도 델리 지사</dt>
+                  <dd><span>주소</span> N-3, 3rd Floor, Ring Road, South Extension Part 1, New Delhi 110049</dd>
+                  <dd><span>전화</span> &#43;91-11-4653-8888</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>인도 방갈로 지사</dt>
+                  <dd><span>주소</span> Bharat Earth Movers Ltd. Bengalooru Complex,New Thippassandrea Post, Bengalooru, 560-075
+                  </dd>
+                  <dd><span>전화</span> &#43;91-040-4011-9093</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+    <? include "../common/sub_footer.html" ?>
+    <script src="./js/tab.js"></script>
+
+</body>
+</html>

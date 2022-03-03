@@ -1,0 +1,40 @@
+/* sub page의 content area */
+
+#content .title_area ul li {width:33.33%;}
+
+#content .content_area {position:relative;}
+#content .content_area dl {position:relative;}
+
+#content .content_area dl dt {margin-bottom: 30px; font-family: 'Nanum Gothic'; font-size: 3.333em;}
+#content .content_area dl dd {font-family: 'Nanum Gothic'; font-size: 1.111em; line-height: 1.5em; overflow: hidden;}
+
+#content .content_area dl:nth-child(even) {padding-right: 700px; text-align: right;}
+#content .content_area dl:nth-child(odd) {padding-left: 700px; text-align: left;}
+#content .content_area dl:nth-child(even) dt {color:#ff0000;}
+#content .content_area dl:nth-child(odd) dt {color: #0a2667;}
+
+#content .content_area dl:nth-child(even) dd span {color:#ff0000; float: right; padding-left: 10px;}
+#content .content_area dl:nth-child(odd) dd span {color: #0a2667; padding-right: 10px;}
+
+#content .content_area dl dt::before {content:''; display: block; position:absolute; width:20px; height:20px; border-radius: 10px; left:590px; top:30px; z-index: 98;}
+#content .content_area dl:nth-child(even) dt::before {background: #ff0000;}
+#content .content_area dl:nth-child(odd) dt::before {background: #0a2667;}
+
+#content .content_area dl dt::after {content:''; display: block; position:absolute; width:10px; height:100%;  left:595px; top:30px; background: #f4f4f4;}
+
+#content .content_area dl:nth-of-type(1) {background: url(../images/content3/2021s_bg.png) 30% center no-repeat;}
+#content .content_area dl:nth-of-type(5) {background: url(../images/content3/2017s_bg.png) 30% center no-repeat;}
+#content .content_area dl:nth-of-type(12) {background: url(../images/content3/2000s_bg.png) 70% center no-repeat;}
+
+
+
+
+/* 상단 고정 스티커 css */
+/* li.before removeClass 로 before 지우기 */
+#content .title_area_box .nav_on {margin: 0; position:fixed; width:100%; left:0; top:0; z-index: 100; background: #fff; box-shadow: 4px 4px 6px 4px rgba(3,3,3,.1);}
+#content .title_area_box .nav_on ul {width:1200px; margin: 0 auto;}
+#content .title_area_box .nav_on li:hover a {background: #ff0000; color:#fff;}
+#content .title_area_box .nav_on a {padding: 15px 0;}
+/* 스크롤 스파이 */
+#content .title_area_box .nav_on a.spy {background: #0a2667; color:#fff;}
+

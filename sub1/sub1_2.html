@@ -1,0 +1,83 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회사소개-기업소개</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="./common/css/sub1common.css">
+  <link rel="stylesheet" href="./css/sub1_content2.css">
+  <!-- 벤더 프리픽스 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+<body>
+  <? include "../common/sub_header.html" ?>
+  <!-- visual -->
+  <div class="visual">
+    <img src="./common/images/visual.jpg" alt="비주얼이미지">
+    <h3>회사소개</h3>
+  </div>
+  <!-- sub-menu -->
+  <div class="sub_menu">
+    <ul>
+      <li><a href="./sub1_1.html">인사말</a></li>
+      <li class="current"><a href="sub1_2.html">기업소개</a></li>
+      <li><a href="./sub1_3.html">기업연혁</a></li>
+      <li><a href="./sub1_4.html">오시는길</a></li>
+    </ul>
+  </div>
+  
+  <!-- content -->
+  <article id="content">
+    <div class="title_area">
+      <div class="title_area_box">
+        <div class="line_map">
+          <i class="fas fa-home"><span class="hidden">home</span></i> &gt; 회사소개 &gt; <strong>기업소개</strong>
+        </div>
+        <h2>기업소개</h2>
+        <p><span>Challengs</span> for the <span>Future</span></p>
+      </div>
+    </div>
+    
+    <div class="content_area">
+      
+      <ul>
+        <li id="foundation">
+          <dl>
+            <dt>국가 기간 산업의 밑거름이 되어온 종합중공업회사</dt>
+            <dd>현대로템은 1977년 사업을 시작한 이래 세계 철도 시장에서의 국가 경쟁력을 강화하기 위해 지난 1999년 7월 철도차량 사업을 하던 현대정공, 한진중공업, 대우중공업 등 3사가 정부 빅딜 1호로 합병하면서 새롭게 출범했습니다. 이후 2001년 현대자동차그룹에 편입된 현대로템은 세계 최고 수준의 기술력과 품질을 기반으로 단기간에 세계가 주목하는 종합 철도 기업으로 자리매김했습니다. 또한, 국내 유일의 전차 제작 기업으로서 최초의 전차인 K1전차, 육군의 주력전차인 K1A1전차 등을 생산하면서 방위산업체로서의 면모를 갖춘 것은 물론, 철강, 자동차, 발전 분야에서의 인프라 구축을 위한 플랜트 분야까지 국가 기간 산업의 밑거름이 된 종합중공업회사입니다.</dd>
+          </dl>
+          <img src="./images/content2/foundation_bg.jpg" alt="foundation배경사진">
+        </li>
+        <li id="technology">
+          <dl>
+            <dt>세계 시장을 선도하는 독자적인 기술력</dt>
+            <dd>현대로템은 해외 시장의 수요와 환경에 대응하기 위해 자기부상열차, 무가선 저상트램 등 친환경 첨단 철도차량의 상용화에 박차를 가하는 한편, 시스템 엔지니어링과 전장품사업, 유지보수, 운영 등 턴키사업 분야의 글로벌 시장 진출에도 힘쓰고 있습니다. 세계 100대 방산업체로 선정된 바 있는 방위사업은 세계 최강의 K2전차 개발을 성공해 국내 전력화에 성공했으며, 터키 전차개발 기술지원 계약을 성사시켜 국내외 '전차 명가'로서의 기술력을 인정받아 해외시장 진출의 새 지평을 열었습니다. 현대로템은 플랜트사업의 EPC 공급업체로 종합 제철설비, 자동차 생산설비, 환경설비, 발전설비 등 다양한 사업을 턴키베이스로 수행하며, 글로벌 엔지니어링 기업으로서의 위상을 다져가고 있습니다. 세계 최고의 종합 중공업회사로 도약하기 위한 현대로템의 열정과 노력은 지금도 계속되고 있습니다.</dd>
+          </dl>
+          <img src="./images/content2/technology_bg.jpg" alt="technology배경사진">
+        </li>
+        <li id="global">
+          <dl>
+            <dt>상장 계기로 중공업의 글로벌 리딩 컴퍼니 도약</dt>
+            <dd>현대로템은 2013년 10월 30일 상장사로 이름을 올렸습니다. 현대로템은 상장을 기점으로 각 사업부별 경쟁력을 더욱 확고히 할 것입니다. 철도사업은 국내 시장의 경험을 바탕으로 국가 철도 산업 발전에 기여함과 동시에, 지속적인 해외신흥시장 확대를 통해 글로벌 브랜드로 성장한다는 계획입니다. 또한 방위사업은 무인전투차량, 소형필드로봇 등 미래무인 무기체계 개발 및 우주미래형 무기체계 사업 확장으로 지속적인 성장을 이뤄갈 계획입니다. 아울러 플랜트사업의 영역 고객기반 확장 및 제조기반의 EPC 사업분야 확대를 통해 세계 시장을 선도하는 초일류 중공업 회사로 도약한다는 각오를 다지고 있습니다.</dd>
+          </dl>
+          <img src="./images/content2/global_bg.jpg" alt="global배경사진">
+        </li>
+      </ul>
+    </div>
+  </article>
+  
+  <? include "../common/sub_footer.html" ?>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "incomeTable" : [
+    {
+      "year" : 2016,
+      "sales" : 29848,     
+      "cost" : 26971,       
+      "profit" : 1062,
+      "otherIn" : 1329,
+      "otherOut" : 1395,
+      "income" : 231
+    },
+    {
+      "year" : 2017,
+      "sales" : 27257,
+      "cost" : 25434,
+      "profit" : 454,
+      "otherIn" : 1377,
+      "otherOut" : 1879,
+      "income" : -463
+    },
+    {
+      "year" : 2018,
+      "sales" : 24119,
+      "cost" : 24276,
+      "profit" : -1962,
+      "otherIn" : 1045,
+      "otherOut" : 1792,
+      "income" : -3080
+    },
+    {
+      "year" : 2019,
+      "sales" : 24593,
+      "cost" : 25532,
+      "profit" : -2799,
+      "otherIn" : 968,
+      "otherOut" : 1254,
+      "income" : -3494
+    },
+    {
+      "year" : 2020,
+      "sales" : 27859,
+      "cost" : 25408,
+      "profit" : 821,
+      "otherIn" : 1272,
+      "otherOut" : 1479,
+      "income" : 224
+    }
+  ]
+}

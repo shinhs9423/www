@@ -1,0 +1,50 @@
+body {font-family: 'Nanum Gothic', sans-serif; background: #f4f4f4;}
+header {padding: 20px 0;}
+header h1{width:150px; margin: 0 auto; }
+header h1 a {display:block; width:150px; height:52px; background: url(../../common/images/header_logo_02.png) 0 0 no-repeat; text-indent: -999px; overflow: hidden; transition: all 1s;}
+
+#content{width: 760px; margin: 50px auto 100px; padding:50px 80px 50px; background: #fff; border-radius: 60px; box-shadow: 2px 2px 12px 4px rgba(3,3,3,.2);}
+#content h2{font-weight:bold; padding:20px 14px 0; font-size: 1.5em; position:relative;}
+#content h2::before{content: ''; position: absolute; top: 22px; left: 0; width: 5px; height: 30px;
+  background: #0a2267;}
+
+#content h2+p {padding: 20px 20px 0; color: #666;}
+#content h2+p>span {color:red;}
+
+#content h3 {padding: 20px 0;}
+
+#content form ul li {position:relative;}
+
+#loadtext, #loadtext2, #loadtext3 {position:absolute; right:20px; top:80px;}
+
+#content span.necessary {color:#ff0000;}
+
+#content label {font-weight:bold; cursor: pointer;}
+
+#content input,
+#content select{ box-sizing:border-box; width:100%; padding: 15px 10px; border-radius: 2px; background: #fff; border: 1px solid #ccc; font-size:1.2em;}
+
+#content input:focus,
+#content select:focus {border:1px solid #0a2267;}
+
+#content .ph_input select {width: 20%;}
+#content .ph_input input {width: 34%;}
+#content .ph_input span {display:inline-block; width:5%; text-align: center;}
+
+#content .email_area {}
+#content .email_area input {width:46%;}
+#content .email_area span {display:inline-block; width:5%; text-align: center;}
+
+.btn_area {padding: 30px 0; margin: 0 auto; overflow: hidden;}
+.btn_area li {float:left; width: 33.33%; text-align: center;}
+.btn_area a {display: block; padding: 10px 0; margin: 0 10px; color:#fff; text-align: center;}
+.btn_area li:nth-of-type(1) a {background: #0a2267;}
+.btn_area li:nth-of-type(2) a {background: #ff0000;}
+.btn_area li:nth-of-type(3) a {background: #bcbcbc; color:#333;}
+
+#content form li >strong {box-sizing:border-box; display:block; width:100%; padding: 15px 10px; border-radius: 2px; background: #ccc; border: 1px solid #ccc; font-size:1.2em;}
+
+#content .notice {margin-top: 30px;}
+/* #content .notice p {margin-bottom:10px; color:#999;} */
+
+#content .drop_btn {margin:50px 0; padding: 15px 0;background: #0a2267; color:#fff; text-align: center; display:block;}

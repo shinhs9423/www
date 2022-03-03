@@ -1,0 +1,104 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회사소개-인사말</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="./common/css/sub3common.css">
+  <link rel="stylesheet" href="./css/sub3_content2.css">
+  <link rel="stylesheet" href="./css/Nwagon.css">
+  <!-- 벤더 프리픽스 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+    <!-- visual -->
+    <div class="visual">
+      <img src="./common/images/visual.jpg" alt="비주얼이미지">
+      <h3>정도경영</h3>
+    </div>
+    <!-- sub-menu -->
+    <div class="sub_menu">
+      <ul>
+        <li><a href="./sub3_1.html">경영정보</a></li>
+        <li class="current"><a href="./sub3_2.html">재무정보</a></li>
+      </ul>
+    </div>
+
+    <!-- content -->
+    <article id="content">
+
+      <div class="title_area">
+        <div class="title_area_box">
+          <div class="line_map">
+            <i class="fas fa-home"><span class="hidden">home</span></i> &gt; 투자정보 &gt; <strong>재무정보</strong>
+          </div>
+          <h2>재무정보</h2>
+          <p>함께 <span>성장하는</span> <span>현대로템이</span>되겠습니다</p>
+        </div>
+      </div>
+
+        <div class="content_area">
+
+
+          <ul class="pop_menu">
+            <li>
+              <a href="#">
+                <i class="fas fa-table"><span class="hidden">매출</span></i>
+                <p>매출 지표 보기</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-chart-pie"><span class="hidden">재무현황</span></i>
+                <p>재무 차트 보기</p>
+              </a>
+            </li>
+
+          </ul>
+      
+          <div class="modal_box">
+
+
+            <div class="pop_box">
+              <div id="load"></div>
+
+              <div id="chart1">
+                <h3>자산 현황</h3>
+              </div>
+
+              <a href="#" class="pop_close"><i class="fas fa-times-circle"><span class="hidden">닫기 버튼</span></i></a>
+            </div>
+
+          </div>
+        
+        </div>
+
+
+
+    
+    </article>
+  
+    <? include "../common/sub_footer.html" ?>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
+    
+    <script src="./js/table_load.js"></script>
+    <script src="./js/Nwagon.js"></script>
+    <script src="./js/Nwagon_no_vml.js"></script>
+    <script src="./js/chart.js"></script>
+    <script src="./js/modal.js"></script>
+</body>
+</html>

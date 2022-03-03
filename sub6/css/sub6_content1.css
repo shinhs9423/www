@@ -1,0 +1,24 @@
+/* sub page의 content area */
+#content .title_area ul li {width:50%;}
+
+#content .content_area {}
+
+/* 백그라운드 */
+#content .content_area .title_wrap{background: url(../images/content1/recurit_bg.jpg) 0 0 no-repeat; background-attachment: fixed;}
+#content .content_area .title_wrap .bg {width: 700px; height: 400px; float:left;  position: relative;}
+
+/* text */
+
+#content .content_area ul {width:400px; padding: 0 100px; margin-left:600px;text-align: left; background: #fff;}
+#content .content_area ul li {margin-bottom: 100px; opacity: 0; transition: all .7s; margin-top:300px;}
+#content .content_area ul .box_move {margin-top: 0; opacity: 1;}
+#content .content_area ul li:nth-last-of-type(1) {margin-bottom: 0;}
+#content .content_area dt {font-family: 'Noto Sans KR', sans-serif; font-size: 1.667em; position: relative; padding: 20px 0;}
+#content .content_area dt span {font-family: 'Noto Sans KR', sans-serif; margin-left: 10px; font-size: .6em; color:#999;}
+#content .content_area dd {font-family: 'Nanum Gothic', sans-serif; font-size: 1.111em; color:#333; text-align: justify; line-height: 2em;}
+#content .content_area dd span {color:#ff0000;}
+#content .content_area ul li dt::before {color:rgba(10,34,103,.2); position:absolute; left: -50px; top:-20px; font-size: 2em;}
+#content .content_area ul li:nth-of-type(1) dt::before {content:'01'; }
+#content .content_area ul li:nth-of-type(2) dt::before {content:'02'; }
+#content .content_area ul li:nth-of-type(3) dt::before {content:'03'; }
+#content .content_area ul li:nth-of-type(4) dt::before {content:'04'; }

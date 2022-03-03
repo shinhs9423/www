@@ -1,0 +1,72 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회사소개-인사말</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="./common/css/sub1common.css">
+  <link rel="stylesheet" href="./css/sub1_content1.css">
+  <!-- 벤더 프리픽스 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+<body>
+
+  <? include "../common/sub_header.html" ?>
+
+    <!-- visual -->
+    <div class="visual">
+      <img src="./common/images/visual.jpg" alt="비주얼이미지">
+      <h3>회사소개</h3>
+    </div>
+    <!-- sub-menu -->
+    <div class="sub_menu">
+      <ul>
+        <li class="current"><a href="sub1_1.html">인사말</a></li>
+        <li><a href="./sub1_2.html">기업소개</a></li>
+        <li><a href="./sub1_3.html">기업연혁</a></li>
+        <li><a href="./sub1_4.html">오시는길</a></li>
+      </ul>
+    </div>
+
+    <!-- content -->
+    <article id="content">
+      <div class="title_area">
+        <div class="title_area_box">
+          <div class="line_map">
+            <i class="fas fa-home"><span class="hidden">home</span></i> &gt; 회사소개 &gt; <strong>인사말</strong>
+          </div>
+          <h2>인사말</h2>
+          <p>기업가치 <span>향상</span>과 <span>고객 행복</span>을 만들어가겠습니다</p>
+        </div>
+      </div>
+
+      <div class="content_area">
+        <div class="visual_box">
+          <img src="./images/content1/ceo.png" alt="대표이사 이용배">
+          <p>현대로템 대표이사 <strong>이용배</strong></p>
+        </div>
+        <div class="text_box">
+          <p>글로벌 중공업 회사 현대로템을 방문해 주셔서 감사합니다.</p>
+          <p>현대자동차 그룹의 일원인 현대로템은 지난 40여 년간 철도사업과 방위사업, 플랜트 설비 및 환경사업을 수행하며 국가 기간산업 발전의 밑거름이 되어 왔습니다.</p>
+          <p>현대로템은 세계 50여개국에 진출하여 확보한 네트워크를 기반으로 글로벌 경영을 가속화하고 있으며, 시속 430km의 동력분산식 고속열차와 자기부상 열차, 로봇 및 무인 전투체계 등 신 성장동력의 독자적 원천기술 개발 및 해외 플랜트 사업의 확대를 통해 미래 경쟁력을 준비하고 있습니다.</p>
+          <p>저희 현대로템 임직원들은 불굴의 의지로 세계시장에서 경쟁우위를 점하고 지속적인 경영혁신과 투명경영을 통해 기업의 사회적 책임을 다하겠습니다.</p>
+          <p>고객 만족을 최상의 가치로 삼아, 보다 편리하고 행복한 미래사회를 만드는데 진력하는 현대로템이 되겠습니다. 앞으로도 많은 관심과 사랑 부탁드리며 건강과 행운이 가득하시기를 기원합니다. 감사합니다.</p>
+        </div>
+      </div>
+    </article>
+    
+    <? include "../common/sub_footer.html" ?>
+</body>
+</html>

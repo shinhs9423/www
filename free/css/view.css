@@ -1,0 +1,16 @@
+#content {}
+
+#content .title_area {margin: 0 auto 0; padding-bottom: 50px;}
+#content .title_area h2::before {content:''; width:0; height:0;}
+#content .title_area p:nth-of-type(1) {display: none;}
+
+#content dl {text-align: justify; font-family: 'Nanum Gothic', sans-serif; margin-bottom:50px;}
+#content dt:nth-of-type(1) {background: #0a2267; color:#fff; padding:20px 20px; overflow: hidden; font-weight: 700; border-radius: 10px 10px 0 0;}
+#content dt:nth-of-type(2) {background: #f4f4f4;overflow: hidden;}
+#content dt span {float:right; padding:10px;}
+#content dd {padding: 40px 20px; border-bottom: 1px solid #f4f4f4; line-height: 1.5em;}
+
+#content .btn_area ul {float:right;}
+#content .btn_area ul li {width: 100px; margin:0 10px; float:left;}
+#content .btn_area ul li a {margin:5px; padding: 10px 0; width:100px; float: left; border:2px solid #0a2267; color:#0a2267; font-weight: 700; border-radius: 10px; transition:all .3s;}
+#content .btn_area ul li:hover a {background: #0a2267; color:#fff;}

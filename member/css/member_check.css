@@ -1,0 +1,50 @@
+body{background: #f4f4f4;}
+header {padding: 20px 0;}
+header h1{width:150px; margin: 0 auto; }
+header h1 a {display:block; width:150px; height:52px; background: url(../../common/images/header_logo_02.png) 0 0 no-repeat; text-indent: -999px; overflow: hidden; transition: all 1s;}
+
+
+#content{width: 750px; margin: 30px auto; padding: 70px; font-family: 'Nanum Gothic', sans-serif; background: #fff; border-radius: 50px; box-shadow: 4px 4px 12px 4px rgba(3,3,3,.2);} 
+
+
+    .member_tab{padding: 30px 0;border-top: 1px solid #333;}
+    .member_tab a{font-size: 24px;padding: 10px;margin: 0 10px;color: #aaa;}
+    .member_tab a.on{color: #333;border-bottom: 2px solid #333;font-weight: bold}
+    .member_tab span{font-size: 24px;padding: 10px;margin: 0 10px;color: #333;font-weight: bold}
+
+    .join{text-align: left; position: relative;}
+    .join h4{font-size: 20px;margin: 30px 0; color: #333;}
+    .join h3{font-size: 28px; margin-bottom: 50px; color: #333; margin-left: 10px;}
+    .join h3::before{content: ''; position: absolute; top: 4px; left: 0; width: 5px; height: 30px;
+        background: #0a2267;}
+    .join .policy{padding: 10px; overflow-y: scroll; height: 100px; margin: 20px 0;border: 1px solid #ddd;
+        background: #fff; font-size: 14px; line-height: 1.5em;}
+    .join .check{color: #333; margin: 20px 0 60px;}
+    .join .button{text-align: center;margin-top: 30px}
+    .join .button .ok,.join .button button,.join .allcheck{display: inline-block;width: 200px;line-height: 24px;padding: 8px 0;border: none;background: #ff0000;color: #fff;font-size: 14px;cursor: pointer;
+        margin: 0 5px;}
+    .join .button .cancel{display: inline-block;width: 200px;line-height: 24px;padding: 8px 0;border: none;background: #999;color: #fff;font-size: 14px;cursor: pointer}
+    .join .allcheck{background: transparent; background:#0a2267; border: 1px solid #0a2267;}
+
+/* 체크박스를 다른 ui로 처리 */
+
+    input[type=checkbox] + label::before {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: transparent;
+        border: 2px solid #999;
+        border-radius: 50%;
+        content: '';
+        margin: 0px 15px -6px 0px;
+    }
+    input[type=checkbox] {
+        display: none;
+    }
+    input[type=checkbox] + label {
+        cursor: pointer;
+    }
+    input[type=checkbox]:checked + label::before {
+        background: #fff url(../images/checked_bg.png) center center no-repeat;
+        border: 2px solid #0a2267;
+    }

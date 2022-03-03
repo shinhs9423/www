@@ -1,0 +1,24 @@
+/* sub page의 content area */
+
+/* #content .title_area ul li {width:50%;} */
+
+#content .content_area {text-align: left;}
+
+#content .content_area h3 {font-family: 'Noto Sans KR', sans-serif; font-weight:400; font-size: 1.667em; margin:50px 0 30px 40px; position: relative; text-align: left;}
+#content .content_area h3::before {content:''; width: 10px; height: 30px; position:absolute; left: -30px; top: 2px; background: #ff0000; transform: skew(20deg);}
+
+#content .content_area li {font-size: 1.111em; line-height: 1.5em;}
+/* #content .content_area li h4 {font-size: 1.333em; margin: 20px 0 20px 30px; position:relative; margin-top:40px; font-family: 'Noto Sans KR', sans-serif; font-weight:400;} */
+/* #content .content_area li h4::before {content:''; width: 10px; height: 22px; position:absolute; left: -20px; top: 4px; background: #ff0000; transform: skew(30deg); } */
+
+#content .content_area li p {font-size: 1.111em; margin-bottom: 20px;}
+
+#content .content_area li dt {font-weight: 700; margin-bottom: 10px; color:#0a2267; margin-left: 30px; position:relative; font-family: 'Nanum Gothic', sans-serif; font-weight:400; }
+/* #content .content_area li dt::before {content:''; width: 5px; height: 20px; position:absolute; left: -20px; top: 6px; background: #0a2267; transform: skew(30deg); } */
+#content .content_area li dd {margin-bottom: 10px; text-align: justify; color: #666; margin-left: 50px; position:relative;}
+#content .content_area li dd ul {color:#999; border: 1px solid #999; padding: 20px; padding-left: 50px; }
+#content .content_area li dd li {position: relative;}
+#content .content_area li dd li::before {content: ''; width:10px; height:10px; background: #999; border-radius: 5px; position:absolute; left: -20px; top:8px; }
+
+
+

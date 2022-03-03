@@ -1,0 +1,21 @@
+#content {}
+
+#content .title_area {margin: 0 auto; padding-bottom: 50px;}
+#content .title_area h2::before {content:''; width:0; height:0;}
+#content .title_area p:nth-of-type(1) {display: none;}
+
+#content dl {text-align: justify; font-family: 'Nanum Gothic', sans-serif; margin-bottom:50px;}
+#content dt:nth-of-type(1) input {box-sizing: border-box; width:100%; border:2px solid #0a2267; padding:20px; border-radius: 10px 10px 0 0; background: #0a2267; color:#fff; transition: all .3s; font-size:1.111em;}
+#content dt:nth-of-type(1) input::placeholder {color:#fff; font-weight: 700;} 
+#content dt:nth-of-type(1) input:focus {background: none; color:#333; background: rgba(10, 33, 102,.3);} 
+#content dt:nth-of-type(1) input:focus::placeholder {color:#333;} 
+
+#content dt:nth-of-type(2) {padding:10px;background: #f4f4f4;}
+#content dt>span {float:right; margin:0 10px;}
+
+#content dd textarea {box-sizing: border-box; width:100%; padding:20px; line-height: 1.5em; border: 1px solid #ccc;}
+
+#content .btn_area ul {float:right;}
+#content .btn_area ul li {width: 100px; margin:0 10px; float:left;}
+#content .btn_area ul li a {margin:5px; padding: 10px 0; width:100px; float: left; border:2px solid #0a2267; color:#0a2267; font-weight: 700; border-radius: 10px; transition:all .3s;}
+#content .btn_area ul li:hover a {background: #0a2267; color:#fff;}

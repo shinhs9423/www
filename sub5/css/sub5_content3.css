@@ -1,0 +1,19 @@
+/* sub page의 content area */
+
+#content .title_area ul li {width:50%; }
+
+
+
+#content .content_area {text-align: left;}
+
+#content .content_area h3 {font-family: 'Noto Sans KR', sans-serif; font-weight:400; font-size: 1.667em; margin:0 0 30px 40px; position: relative; text-align: left;}
+#content .content_area h3::before {content:''; width: 10px; height: 30px; position:absolute; left: -30px; top: 10px; background: #ff0000; transform: skew(20deg);}
+#content .content_area p {font-size: 1.111em; line-height: 1.5em; margin-bottom: 50px; font-family: 'Nanum Gothic', sans-serif; font-weight:400;}
+
+#content .content_area ul {overflow: hidden; width:1200px; text-align: center; color:#fff;}
+#content .content_area li {width: 240px; margin-right: 80px; padding-bottom: 20px; background:#0a2267; float:left; border-radius: 20px; transition: all .5s;}
+#content .content_area li:last-of-type {margin-right:0;}
+#content .content_area li:hover {background: #ff0000;}
+#content .content_area li i {display: block; font-size: 4.444em; padding: 30px 0 20px;}
+
+

@@ -1,0 +1,147 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회사소개-인사말</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="./common/css/sub5common.css">
+  <link rel="stylesheet" href="./css/sub5_content2.css">
+  <!-- 벤더 프리픽스 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+    <!-- visual -->
+    <div class="visual">
+      <img src="./common/images/visual.jpg" alt="비주얼이미지">
+      <h3>정도경영</h3>
+    </div>
+    <!-- sub-menu -->
+    <div class="sub_menu">
+      <ul>
+        <li><a href="./sub5_1.html">경영전략</a></li>
+        <li  class="current"><a href="./sub5_2.html">사회공헌</a></li>
+        <li><a href="./sub5_3.html">동반성장</a></li>
+        <li><a href="./sub5_4.html">윤리경영</a></li>
+      </ul>
+    </div>
+
+    <!-- content -->
+    <article id="content">
+      <div class="title_area">
+        <div class="title_area_box">
+
+          <div class="line_map">
+            <i class="fas fa-home"><span class="hidden">home</span></i> &gt; 정도경영 &gt; <strong>사회공헌</strong>
+          </div>
+
+          <h2>사회공헌</h2>
+
+          <p><span>함께하는</span> 진정한 <span>파트너</span> 현대로템</p>
+
+          <div>
+            <ul class="slide_menu">
+              <li><a href="#" class="link1">비전</a></li>
+              <li><a href="#" class="link2">철학</a></li>
+              <li><a href="#" class="link3">장기목표</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="content_area">
+
+  
+          <div class="con_list">
+            
+            <h3 class="con1">비전</h3>
+            <div id="vision">
+              <dl>
+                <dt><span>Together</span> We Stand For Your <span>Future</span></dt>
+                <dd>
+                  현대로템은 글로벌 기업으로써 사람과 사람을 잇는 소통과 신뢰의 기술로 공정한 사회공헌 체계수립과 다양한 이해관계자들과의 조화로운 성장을 통해 적극적인 사회적 책임 이행하는 "미래를 향한 진정한 파트너" 가 되고자 노력할 것입니다.
+                </dd>
+              </dl>
+              <img src="./images/content2/vision_bg.jpg" alt="사회공헌 비전 배경사진">
+  
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>         
+            </div>
+  
+          </div>
+  
+          <div class="con_list">
+            <h3 class="con2">철학</h3>
+            <div id="philosophy">
+              <dl>
+                <dt>미래의 <span>삶의 질</span>향상을 위한 적극적인 <span>사회적 책임</span></dt>
+                <dd>함께하는 사회와 조화를 이루는 파트너쉽을,</dd>
+                <dd>발전 지향적이고 지속적인 변화에 대한 움직임을,</dd>
+                <dd>넓은 세상에 전해지는 사랑과 꿈을 실현하고자 하며,</dd>
+              </dl>
+  
+              <ul>
+                <li>
+                  <p>신뢰 경영</p>
+                </li>
+                <li>
+                  <p>상생 추구</p>
+                </li>
+                <li>
+                  <p>인류애 실현</p>
+                </li>
+              </ul>
+              
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+  
+            </div>
+          </div>
+          
+          <div class="con_list">
+            <h3 class="con3">장기목표</h3>
+            <div id="active">
+              <dl>              
+                <dt><span>신뢰</span> 받는 <span>글로벌</span> 기업 이미지 구축</dt>
+                <dd>
+                  현대로템은 현대자동차그룹의 계열사로써 그룹사회공헌 슬로건 "함께 움직이는 세상"과 함께 그룹 중점 사업분야인 6대 무브를 반영하여 사회공헌 활동을 수행합니다.
+                </dd>
+              </dl>
+              <img src="./images/content2/active_bg.jpg" alt="사회공헌 장기목표 배경사진">
+  
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>     
+            </div>
+          </div>
+
+
+      </div>
+
+    </article>
+  
+    <? include "../common/sub_footer.html" ?>
+    <script src="./js/slide_move.js"></script>
+
+</body>
+</html>

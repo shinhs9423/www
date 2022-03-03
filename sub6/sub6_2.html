@@ -1,0 +1,90 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회사소개-인사말</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="./common/css/sub6common.css">
+  <link rel="stylesheet" href="./css/sub6_content2.css">
+  <!-- 벤더 프리픽스 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+<body>
+  <? include "../common/sub_header.html" ?>
+
+    <!-- visual -->
+    <div class="visual">
+      <img src="./common/images/visual.jpg" alt="비주얼이미지">
+      <h3>인재채용</h3>
+    </div>
+    <!-- sub-menu -->
+    <div class="sub_menu">
+      <ul>
+        <li><a href="./sub6_1.html">인재상</a></li>
+        <li  class="current"><a href="./sub6_2.html">복리후생</a></li>
+      </ul>
+    </div>
+
+    <!-- content -->
+    <article id="content">
+      <div class="title_area">
+        <div class="title_area_box">
+          <div class="line_map">
+            <i class="fas fa-home"><span class="hidden">home</span></i> &gt; 인재채용 &gt; <strong>복리후생</strong>
+          </div>
+          <h2>복리후생</h2>
+          <p>행복한 <span>직원</span>을 위한 <span>복리후생</span>을 소개합니다</p>
+
+        </div>
+      </div>
+
+      <div class="content_area">
+        
+        <ul>
+          <li>
+            <p>생활안정</p>
+            <dl>
+              <dt><i class="fas fa-syringe"></i>의료지원</dt>
+              <dd>직원 및 가족 의료비 발생시 지원 및 종합검진 지원</dd>
+              <dt><i class="fas fa-building"></i>주거안정</dt>
+              <dd>주택구입/전세 자금 지원, 기숙사 운영</dd>
+              <dt><i class="fas fa-car"></i>차량지원</dt>
+              <dd>차량구입 시 보조금 지급, 차량 유류비 지원, 통근차량 운행</dd>         
+              <dt><i class="fas fa-graduation-cap"></i>학자금 지원</dt>
+              <dd>유아 교육비 및 중/고/대학생 자녀 학자금 지원</dd>
+            </dl>
+          </li>
+          
+          <li>
+            <p>근로장려</p>
+            <dl>
+              <dt><i class="fas fa-trophy"></i>장기근속자</dt>
+              <dd>장기근속자 포상 제도</dd>
+              <dt><i class="fas fa-birthday-cake"></i>경조사 지원</dt>
+              <dd>경조휴가, 경조금, 경조화환 지급</dd>
+              <dt><i class="fas fa-table-tennis"></i>동회회 지원</dt>
+              <dd>동호회 활동 보조비 지급 및 사내 활동장소 지원</dd>
+              <dt><i class="fas fa-umbrella-beach"></i>휴가 및 명절</dt>
+              <dd>하계 휴가비 및 명절 지급, 휴양시설 운영</dd>
+            </dl>
+          </li>
+        </ul>
+
+      </div>
+    </article>
+    
+    <? include "../common/sub_footer.html" ?>
+</body>
+</html>

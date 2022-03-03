@@ -1,0 +1,93 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회사소개-인사말</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="./common/css/sub6common.css">
+  <link rel="stylesheet" href="./css/sub6_content1.css">
+  <!-- 벤더 프리픽스 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+<body>
+      <? include "../common/sub_header.html" ?>
+    
+    <!-- visual -->
+    <div class="visual">
+      <img src="./common/images/visual.jpg" alt="비주얼이미지">
+      <h3>인재채용</h3>
+    </div>
+    <!-- sub-menu -->
+    <div class="sub_menu">
+      <ul>
+        <li class="current"><a href="./sub6_1.html">인재상</a></li>
+        <li><a href="./sub6_2.html">복리후생</a></li>
+      </ul>
+    </div>
+
+    <!-- content -->
+    <article id="content">
+      <div class="title_area">
+        <div class="title_area_box">
+          <div class="line_map">
+            <i class="fas fa-home"><span class="hidden">home</span></i> &gt; 인재채용 &gt; <strong>인재상</strong>
+          </div>
+          <h2>인재상</h2>
+          <p>세계를 향해 <span>나아가는</span> 힘찬 전진에 <span>동행</span>하세요</p>
+
+        </div>
+      </div>
+
+      <div class="content_area">
+
+        <div class="title_wrap"> 
+          <ul>
+            <li>
+              <dl>
+                <dt>혁신성<span>innovation</span></dt>
+                <dd>열정적으로 변화를 이끌고 새로운 일에 과감히 도전하는 <span>혁신적 인재</span></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>지성<span>intelligent</span></dt>
+                <dd>업무와 관련된 전문지식을 쌓고 지식 공유에 앞장서는 <span>지적 인재</span></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>세계화<span>international</span></dt>
+                <dd>무한경쟁 시대를 헤쳐나갈 글로벌 마인드로 무장한 <span>세계화된 인재</span></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>창조성<span>imaginative</span></dt>
+                <dd>고객지향적 가치 창출을 통해 고객의 삶을 풍요롭게 하는 <span>창조적 인재</span></dd>
+              </dl>
+            </li>
+          </ul>
+  
+        </div>
+        
+
+      </div>
+    </article>
+
+    <? include "../common/sub_footer.html" ?>
+
+    <script src="./js/scroll.js"></script>
+</body>
+</html>

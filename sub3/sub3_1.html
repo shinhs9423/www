@@ -1,0 +1,94 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회사소개-인사말</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="./common/css/sub3common.css">
+  <link rel="stylesheet" href="./css/sub3_content1.css">
+  <!-- 벤더 프리픽스 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+
+
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+    <!-- visual -->
+    <div class="visual">
+      <img src="./common/images/visual.jpg" alt="비주얼이미지">
+      <h3>정도경영</h3>
+    </div>
+    <!-- sub-menu -->
+    <div class="sub_menu">
+      <ul>
+        <li class="current"><a href="./sub3_1.html">경영정보</a></li>
+        <li><a href="./sub3_2.html">재무정보</a></li>
+      </ul>
+    </div>
+
+    <!-- content -->
+    <article id="content">
+      <div class="title_area">
+        <div class="title_area_box">
+          <div class="line_map">
+            <i class="fas fa-home"><span class="hidden">home</span></i> &gt; 투자정보 &gt; <strong>경영정보</strong>
+          </div>
+          <h2>경영정보</h2>
+
+          <p><span>성장하는</span> <span>현대로템이</span>되겠습니다</p>
+        </div>
+      </div>
+
+      <div class="content_area">
+        <h3>경영진 소개</h3>
+        <div id="load">
+
+
+        </div>
+
+
+
+
+      </div>
+    
+    </article>
+  
+    <? include "../common/sub_footer.html" ?>
+
+    <script src="./js/staff_load.js"></script>
+    <script src="./js/pick.js"></script>
+
+</body>
+</html>
+
+
+<!-- <div class="ex">
+  <ul>
+      <li>
+        <a>
+          <img src="./images/content1/' + responseObject.staff[i].pic + '" alt="' + responseObject.staff[i].name + '사진">
+          <dl>
+            <dt>' + responseObject.staff[i].name + '</dt>
+            <dd>' + '<span>' + '직급 :' + '</span>' + responseObject.staff[i].rank + '</dd>
+            <dd>' + '<span>' + '선임 :' + '</span>' + responseObject.staff[i].date + '</dd>
+            <dd>' + '<span>' + '임기 :' + '</span>' + responseObject.staff[i].term + ' 년</dd>
+            <dt>' + '주요경력' + '</dt>
+            <dd>'+ '(현)' + responseObject.career[i].incumbent +'</dd>
+            <dd>'+ '(전)'+ responseObject.career[i].former +'</dd>
+          </dl>
+        <a>
+      </li>
+    </ul>
+</div> -->

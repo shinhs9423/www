@@ -1,0 +1,33 @@
+body{background: #f4f4f4;}
+.wrap {width:1200px; margin:0 auto;}
+header {padding-top: 20px;}
+header h1{width:150px; margin: 0 auto;}
+header h1 a {display:block; width:150px; height:52px; background: url(../../common/images/header_logo_02.png) 0 0 no-repeat; text-indent: -999px; overflow: hidden;}
+
+#content {box-sizing: border-box; width: 1000px; padding:80px 50px 40px; margin: 30px auto; font-family: 'Nanum Gothic', sans-serif; background: #fff; border-radius: 40px; box-shadow: 4px 4px 12px 4px rgba(3,3,3,.2);}
+
+#content ul.tab {overflow: hidden; margin-bottom: 40px;}
+#content ul.tab li {float:left; width:50%;}
+#content ul.tab li a {display: block; text-align: center; font-size: 1.533em; padding:20px 0; font-weight: 700;}
+#content ul.tab li.current {background: #0a2267; color:#fff;}
+#content ul.tab li.current a {color:#fff;}
+
+#content input, #content select {box-sizing: border-box; font-size: 1.2em; padding: 15px 10px; margin-bottom: 40px; border:1px solid #ccc;}
+
+#content .id_box input {width: 100%;}
+#content .name_box input {width: 100%;}
+
+#content .hp_box select {width: 20%; background: #fff;}
+#content .hp_box input {width: 33%;}
+#content .hp_box span {display:inline-block; width:5%; text-align: center;}
+
+#content .hp_box+input {display: block; width:100%; padding: 20px 0; background: #0a2267; border:0px; color:#fff; transition: all .3s; margin-bottom: 0;}
+#content .hp_box+input:hover {background: #f00;}
+
+#content #loadtext {padding: 20px; text-align: center; font-size:1.111em; line-height: 1.5em;}
+
+#content #loadtext+ul {overflow:hidden;}
+#content #loadtext+ul li {width:50%; float:left; position:relative;}
+#content #loadtext+ul li:nth-of-type(1)::before {content:''; width:1px; height:20px; background: #ccc; position:absolute; right:0; top:15px;}
+#content #loadtext+ul li a {display:block; padding:10px 0; color:#999; font-weight: 700; text-align: center; transition:all .3s;}
+#content #loadtext+ul li:hover a { color:#333; text-shadow: 2px 2px 2px rgba(3,3,3,.2);}

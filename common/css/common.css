@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap&https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+/* 
+font-family: 'Roboto', sans-serif; font-weight:700;
+font-family: 'Noto Sans KR', sans-serif; font-weight:700;
+font-family: 'Nanum Gothic', sans-serif; font-weight:400;
+font-family: 'Nanum Myeongjo', serif; font-weight:400;
+*/
+
+/* CSS Reset */
+
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block;}
+body{font-family: "돋움", Dotum,"굴림",Gulim, sans-serif; font-size: 18px;
+  color: #333;}
+ol, ul{list-style: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+address{font-style: normal;}
+a{color: #333; text-decoration: none; }
+img{border: 0; vertical-align: top;}
+
+.hidden{display: block; position: absolute;
+  left: -1000%; width: 1px; height: 1px;
+  overflow: hidden; color: #fff;}
+
+  /* skip nav */
+
+#skipNav{position:relative;width:100%;overflow:hidden;}
+#skipNav a{display:block; height:1px; margin-bottom:-1px;
+    overflow:hidden; text-align:center;  color:#fff; font-size:0.887em;}
+#skipNav a:hover,#skipNav a:focus,#skipNav a:active{
+height:auto; padding:10px 0; background: #0a2267;
+  /* background:none repeat scroll 0 0 #6; */
+  }
+
+
+.wrap {width: 100%; overflow: hidden;}
+
+/* header 공통 영역 */
+
+#headerArea .top_menu {position:absolute; right:50px; top:50px; font-size: 0.889em;}
+#headerArea .top_menu ul {}
+#headerArea .top_menu li {float:left; margin-right: 30px;}
+#headerArea .top_menu li a {color: #fff; transition: all .5s;}
+
+#headerArea h1{width:150px; margin: 0 auto 40px; }
+
+#headerArea h1 a {display:block; width:150px; height:52px; background: url(../images/header_logo_01.png) 0 0 no-repeat; text-indent: -999px; overflow: hidden; transition: all 1s;}
+
+#headerArea {
+	width: 100%;
+	height: 150px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0);
+	z-index: 100;
+	transition: background .5s;
+	
+	padding-top: 30px;
+	font-family:'Noto Sans KR', sans-serif;
+	/* box-shadow: 4px 4px 6px 4px rgba(3,3,3,.1); */
+}
+
+#headerArea .header_inner {
+	width: 1200px;
+	margin: 0 auto;
+	
+	position:relative;
+}
+
+
+#headerArea #gnb {
+	clear: both;
+	width: 1200px;
+	
+	margin:0 auto;
+}
+
+#gnb ul.dropdownmenu {
+	float: left;
+	width: 100%;
+
+
+}
+
+#gnb ul.dropdownmenu li.menu {
+	position: relative;
+	float: left;
+	width: 16.66%;
+
+
+	font-weight: 700;
+	font-size: 1.333em;
+}
+
+#gnb ul.dropdownmenu li a.depth1 {
+	display: block;
+	text-align: center;
+	transition: all .5s;
+	height: 50px;
+	
+	color:#fff;
+}
+
+
+/* 2depth */
+#gnb ul.dropdownmenu li ul {
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	padding-bottom:30px;
+	line-height: 2em;
+	display: none;
+}
+
+#gnb ul.dropdownmenu li ul li {
+	text-align: center;
+	/* font-weight: bold; */
+}
+
+#gnb ul.dropdownmenu li ul li a {
+	display: block;
+	/* color: #666; */
+	transition: all .5s;
+	font-weight: 400;
+	font-size: 0.777em;
+}
+
+#gnb ul.dropdownmenu li ul li a:hover {
+	color: #fff;
+	background: #0a2267;
+	border-radius: 5px;
+}
+
+
+
+/* footer 공통 영역 */
+
+#footerArea {width:100%; background: #111; font-family: "돋움", Dotum, sans-serif; font-weight: 400; color: #fff; margin-top:150px;}
+#footerArea a {font-family: 'Noto Sans KR', sans-serif; font-weight:300; color:#fff;}
+
+#footerArea .footer_inner {width:1200px; margin:0 auto; height:110px; padding: 50px 0 80px;}
+
+#footerArea .footer_logo {width:300px; float:left;}
+
+#footerArea .footer_center {width:620px; float:left; text-align: left; padding-left: 80px;}
+#footerArea .footer_center ul {height: 26px; margin-bottom: 10px;}
+
+#footerArea .footer_center li {float: left; margin-right: 30px; }
+#footerArea .footer_center address,
+#footerArea .footer_center p {font-size:0.889em; line-height: 1.5em;}
+
+#footerArea .footer_right {width:200px; float:right;}
+
+#footerArea .footer_right ul:nth-child(1) {height: 50px; margin-bottom: 20px;}
+#footerArea .footer_right ul:nth-child(1) li {float:left; margin-right: 10px; font-size:34px; }
+#footerArea .footer_right ul:nth-child(1) li a {color: #fcfcfc;}
+
+#footerArea .footer_right .select_box {width:160px; height:20px; background:#fff; padding:5px 0; position:relative;}
+#footerArea .footer_right .select_box a { display:block; font-size:.8em; text-align: center; color:#333;}
+#footerArea .footer_right .select_box a:nth-child(1):hover i {transform: rotate(90deg);} 
+#footerArea .footer_right .select_box .family_site { position:absolute; top:-362px; left:-1px; border:1px solid #999; width:160px; display:none; background: #fff;}
+#footerArea .footer_right .select_box .family_site li { line-height:1.5em; border-bottom:1px solid #999; font-size: 1em;}
+#footerArea .footer_right .select_box .family_site li:last-of-type {border-bottom: 0px;}
+#footerArea .footer_right .select_box .family_site li a {display:block; padding: 4px 0;}
+#footerArea .footer_right .select_box .family_site li a:hover { background:#999; color:#fff;}
+#footerArea .footer_right .select_box i {margin-left: 10px; color: #333; transform: rotate(0deg); transition: all .5s;} 
+
+
+/* move top */
+.topMove {display:block; position:fixed; left:50%; margin-left: 650px; bottom: 280px; z-index: 50;}
+
+.topMove i {
+	font-size: 50px;
+	color: #0a2267;
+}
+
+
+
+/* 검색창 */
+#searchForm {display:none; position:absolute; right:80px; top:0; z-index: 101;}
+#searchForm .form_inner {}
+#searchForm .form_inner p {border:1px solid #0a2267; border-radius: 5px; background:#fff;}
+#searchForm .form_inner p input {border:0; outline:none; background:none; padding: 0 5px;}
+#searchForm .form_inner p button {color:#0a2267; padding:0 5px; outline:none; background:none; border:0;}
+#searchForm .form_inner p button:hover {color:#f00;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

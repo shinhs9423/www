@@ -1,0 +1,36 @@
+/* sub page의 content area */
+#content .title_area ul li {width:50%;}
+
+#content .content_area {}
+#content .content_area p:nth-of-type(1) {width:1000px; margin:50px auto 100px; padding:0; font-family: 'Nanum Gothic'; font-size: 1.222em; line-height: 1.5em; text-align: justify;}
+
+#content .content_area table { border-collapse: collapse; width: 1200px; margin-bottom: 100px; text-align: left;}
+#content .content_area table thead { font-family: 'Noto Sans KR'; font-size: 1.111em; border-collapse: collapse; border-top: 1px solid #999; border-bottom: 1px solid #ccc;}
+#content .content_area table thead th {padding: 10px 0;}
+#content .content_area table thead td {padding-bottom: 10px;}
+#content .content_area table tbody { font-family: 'Nanum Gothic'; font-size: 1em;}
+#content .content_area table tbody tr td { border-bottom: 1px dotted #ccc; padding: 10px 0; }
+#content .content_area table tbody tr:nth-last-of-type(1) td { border-bottom: 1px solid #ccc;}
+
+#content .content_area ul:nth-of-type(1) {}
+#content .content_area ul:nth-of-type(1) li {margin-bottom: 100px;}
+#content .content_area ul:nth-of-type(1) li:nth-last-of-type(1) {margin-bottom: 0;}
+#content .content_area ul:nth-of-type(1) li dl {box-sizing: border-box; width: 600px; height:400px; background: #fcfcfc;}
+#content .content_area ul:nth-of-type(1) li:nth-of-type(even) dl {margin-left:600px;}
+#content .content_area ul:nth-of-type(1) li dt {font-family: 'Noto Sans KR'; font-size: 1.667em; padding: 50px 20px;}
+#content .content_area ul:nth-of-type(1) li dd {font-family: 'Naum Gothic'; font-size: 1.111em; text-align: justify; padding: 0 30px; line-height: 1.7em;}
+
+
+/* #content .content_area ul:nth-of-type(1) li:nth-of-type(odd) {background: url 600px 0 no-repeat;} */
+#content .content_area ul:nth-of-type(1) li:nth-of-type(1) {background:  url(../images/content3/steel_bg.jpg) 600px 0 no-repeat;}
+#content .content_area ul:nth-of-type(1) li:nth-of-type(2) {background:  url(../images/content3/logistics_bg.jpg) 0 0 no-repeat;}
+#content .content_area ul:nth-of-type(1) li:nth-of-type(3) {background:  url(../images/content3/eco_bg.jpg) 600px 0 no-repeat;}
+#content .content_area ul:nth-of-type(1) li:nth-of-type(4) {background:  url(../images/content3/press_bg.jpg) 0 0 no-repeat;}
+#content .content_area ul:nth-of-type(1) li:nth-of-type(5) {background:  url(../images/content3/line_bg.jpg) 600px 0 no-repeat;}
+#content .content_area ul:nth-of-type(1) li:nth-of-type(6) {background:  url(../images/content3/airport_bg.jpg) 0 0 no-repeat;}
+#content .content_area ul:nth-of-type(1) li:nth-of-type(7) {background:  url(../images/content3/제목-없음-1.jpg) 600px 0 no-repeat;}
+
+
+
+
+

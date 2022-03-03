@@ -1,0 +1,18 @@
+/* sub page의 content area */
+#content .title_area ul li {width:50%;}
+
+#content .content_area {}
+#content .content_area p:nth-of-type(1) {width:1200px; margin:50px auto 100px; padding:0; font-family: 'Nanum Gothic'; font-size: 1.222em; line-height: 1.5em; text-align: justify; margin-top:0;}
+
+#content .content_area ul:nth-of-type(1) {overflow: hidden;}
+#content .content_area ul:nth-of-type(1) li {width: 400px; float:left;}
+#content .content_area ul:nth-of-type(1) dl {color:#333;}
+#content .content_area ul:nth-of-type(1) dl dt { font-family: 'Roboto', sans-serif; font-weight:700; font-size: 2em; padding: 30px 0; border-bottom: 1px solid #333; margin-bottom: 30px;}
+#content .content_area ul:nth-of-type(1) dl dt span {color: #ff0000; transition: all .5s;}
+#content .content_area ul:nth-of-type(1) dl dt:hover span {color: #0a2267;}
+#content .content_area ul:nth-of-type(1) dl dd {font-family: 'Nanum Gothic', sans-serif; line-height: 1.5em; font-size: 1.222em; padding: 10px 0; border-radius: 30px; margin: 0 5px 5px 10px;}
+#content .content_area ul:nth-of-type(1) dl dd:nth-of-type(1) {background: #fff; border-radius: 30px; color:#333; font-weight: 700;}
+
+#content .content_area div:nth-of-type(1) {width:630px; height:630px; position:fixed; left:50%; margin-left: -30px; top: 70%; z-index: -1; background: url(../images/content1/bg.png); opacity: .2;}
+
+/* #content .content_area .bg_box {position: absolute; left:50%; margin-left:-600px; z-index: -1; background-attachment: fixed; height: 500px;} */

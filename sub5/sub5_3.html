@@ -1,0 +1,105 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회사소개-인사말</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="./common/css/sub5common.css">
+  <link rel="stylesheet" href="./css/sub5_content3.css">
+  <!-- 벤더 프리픽스 -->
+  <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+    <!-- visual -->
+    <div class="visual">
+      <img src="./common/images/visual.jpg" alt="비주얼이미지">
+      <h3>정도경영</h3>
+    </div>
+    <!-- sub-menu -->
+    <div class="sub_menu">
+      <ul>
+        <li><a href="./sub5_1.html">경영전략</a></li>
+        <li><a href="./sub5_2.html">사회공헌</a></li>
+        <li class="current"><a href="./sub5_3.html">동반성장</a></li>
+        <li><a href="./sub5_4.html">윤리경영</a></li>
+      </ul>
+    </div>
+
+    <!-- content -->
+    <article id="content">
+      <div class="title_area">
+        <div class="title_area_box">
+
+          <div class="line_map">
+            <i class="fas fa-home"><span class="hidden">home</span></i> &gt; 정도경영 &gt; <strong>동반성장</strong>
+          </div>
+
+          <h2>동반성장</h2>
+
+          <p>더 나은 <span>미래</span>를 향한 <span>동행</span></p>
+
+          <!-- <div class="tabs">
+            <ul class="tab_menu">
+              <li><a href="#" class="tab tab1">동반성장</a></li>
+              <li><a href="#" class="tab tab2">프로그램</a></li>
+            </ul>
+          </div> -->
+
+        </div>
+
+      </div>
+
+      <div class="content_area">
+
+        <h3>동반성장 목표</h3>
+        <p>
+          현대로템과 협력사는 '중공업 산업의 글로벌 리더'라는 목포를 가지고 함께 움직이는 영원한 동반자 입니다. 현대로템은 혼자서는 먼 길을 갈 수 없으며 협력사의 성장과 발전이 곧 우리 모두의 성장과 발전으로 이어짐을 잘 알고 있습니다. 서로 성장하는 선순환의 고리를 만들어 가겠습니다.
+        </p>
+
+        <h3>동반성장 프로그램</h3>
+        <p>
+          현대로템은 협력사에  지속적인 성장 역량확보를 돕기 위해 금융지원, 기술지원, 교육지원 등 현행 협력 프로그램을 더욱 강화하고 신규 프로그램을 추가 발굴하여 협력사에 적극 지원하여 더 나은 미래를 만들어 가기 위해 노력하겠습니다.
+        </p>
+
+        <ul>
+          <li>
+            <i class="fas fa-book"></i>
+            하도급 4대 가이드 라인
+          </li>
+          <li>
+            <i class="fas fa-coins"></i>
+            금융지원
+          </li>
+          <li>
+            <i class="fas fa-cogs"></i>
+            기술지원
+          </li>
+          <li>
+            <i class="fas fa-graduation-cap"></i>
+            교육지원
+          </li>
+
+        </ul>
+      </div>
+
+    </article>
+  
+    <? include "../common/sub_footer.html" ?>
+    <script src="./js/tab.js"></script>
+
+</body>
+</html>
