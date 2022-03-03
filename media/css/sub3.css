@@ -1,0 +1,177 @@
+/* 와이드 pc */
+
+#content .movie_inner {overflow: hidden;}
+
+#content .movie_inner .clip_part:nth-of-type(n+1) {width:50%; float:left;}
+
+#content .movie_inner .clip_part .contentArea {
+  position: relative;
+  width: 96%;
+  margin: 30px auto;
+}
+
+.imgPart {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+#content .movie_inner .clip_part .contentArea .imgPart .popup-youtube>img {
+  width: 100%;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+#content .movie_inner .clip_part .contentArea p {
+  color: #fff;
+  text-align: justify;
+}
+
+#content .movie_inner .clip_part .playBnt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 110px;
+  height: 110px;
+  margin: -55px 0 0 -55px;
+  border-radius: 94px;
+  background: rgba(0,0,0,.6);
+  transition:all .5s;
+}
+
+
+#content .movie_inner .clip_part .imgPart:hover .playBnt {
+  background: rgba(255,0,0,.6);
+  transform: rotate(240deg);
+}
+
+#content .movie_inner .clip_part .playBnt img {
+  position: relative;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  margin: -32px 0 0 -20px;
+}
+
+#content .movie_inner .clip_part p {}
+#content .movie_inner .clip_part p strong {display: block; font-size: 1.2rem; margin-bottom: 10px; box-sizing: border-box; color:rgb(222,183,122);}
+
+
+#content .music_inner {overflow: hidden;}
+
+/* play_box px로 바꾸기, controll_box 마진 left px 주기 */
+
+
+
+#content .music_inner .controll_box{ width: 50%; float:left;}
+
+#content .music_inner .controll_box ul.control_panel {overflow: hidden; background: rgba(255,255,255,.4); border-radius: 40px; margin-bottom: 50px;}
+#content .music_inner .controll_box ul.control_panel li {width:20%; float:left; text-align: center;}
+#content .music_inner .controll_box ul.control_panel li a {display:block; padding: 20px 0; font-size: 2rem;}
+#content .music_inner .controll_box ul.control_panel li a:hover { color: rgb(222,183,122);}
+
+#content .music_inner .controll_box ul.music_list {overflow: hidden;}
+/* cd float */
+#content .music_inner .controll_box ul.music_list li {width:33.33%; float:left;}
+
+
+
+#content .music_inner .controll_box ul.music_list li a {display: block; width:96%; position:relative; transition: all .5s; border-radius: 50%; margin: 2%;
+
+}
+
+/* bg img */
+#content .music_inner .controll_box ul.music_list li a::after {content:''; width: 50%; height: 50%; border-radius: 50%; position:absolute; left:50%; top:50%; background:rgba(255,255,255,.5); transform: translateX(-50%) translateY(-50%);}
+#content .music_inner .controll_box ul.music_list li a::before {content:''; width: 30%; height: 30%; border-radius: 50%; position:absolute; left:50%; top:50%; background:rgba(0,0,0,.9); transform: translateX(-50%) translateY(-50%);}
+#content .music_inner .controll_box ul.music_list li a.music_01 {background: url(../audio/music_01.jpg) center center no-repeat;}
+#content .music_inner .controll_box ul.music_list li a.music_02 {background: url(../audio/music_02.jpg) center center no-repeat;}
+#content .music_inner .controll_box ul.music_list li a.music_03 {background: url(../audio/music_03.jpg) center center no-repeat;}
+#content .music_inner .controll_box ul.music_list li a.music_04 {background: url(../audio/music_04.jpg) center center no-repeat;}
+#content .music_inner .controll_box ul.music_list li a.music_05 {background: url(../audio/music_05.jpg) center center no-repeat;}
+
+#content .music_inner .controll_box ul.music_list li a span {display: block; font-size: 3rem; text-align: center; padding-top:45%; text-shadow: 4px 4px 10px rgba(0,0,0,.9);}
+
+
+
+#content .music_inner .view_box{ width: 48%; margin: 0 1%; float:right; position:relative;}
+
+#content .music_inner .view_box .lyrics_box {position:absolute; width:100%; left:0; top:0; background: rgba(0, 0, 0, .6);}
+
+#content .music_inner .view_box img {width: 100%;}
+
+#content .music_inner .view_box ul.lyrics_box ul {}
+#content .music_inner .view_box ul.lyrics_box li {overflow: hidden;}
+
+#content .music_inner .view_box ul.lyrics_box dl {}
+#content .music_inner .view_box ul.lyrics_box dt {font-size: 3rem; font-weight: 700; font-family: 'Lora', serif; text-align: center; padding: 100px 0 80px;}
+#content .music_inner .view_box ul.lyrics_box dd {font-size: 1.5rem; text-align: center; line-height: 1.5rem; padding: 0 25%;}
+#content .music_inner .view_box ul.lyrics_box dd p span {display: block; margin-bottom: 30px;}
+/* #content .music_inner .view_box ul.lyrics_box dd p span:nth-of-type(n+7) {display: none;} */
+
+#content .music_inner .view_box ul.lyrics_box li:nth-child(n+2) {display: none;}
+
+
+@keyframes playing {
+  from { transform: rotate(0);  box-shadow: 0 0 6px 4px rgba(255,255,255,.5);}
+  to { transform: rotate(1080deg);  box-shadow: 0 0 6px 4px rgba(255,255,255,1);}
+}
+#content .music_inner .controll_box ul.music_list li a.playing {animation: playing 1s .1s linear infinite backwards;}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+
+  #content .music_inner .view_box ul.lyrics_box dd p span:nth-of-type(n+7) {display: none;}
+
+  #content .music_inner .view_box ul.lyrics_box dt {font-size: 2.5rem; padding: 60px 0 30px;}
+  #content .music_inner .view_box ul.lyrics_box dd {}
+  #content .music_inner .view_box ul.lyrics_box dd p span {margin-bottom: 20px;}
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+  #content .movie_inner .clip_part:nth-of-type(1) {width:100%; float:none;}
+  #content .movie_inner .clip_part:nth-of-type(n+2) {width:33.33%; float: left;}
+
+
+  #content .music_inner .view_box .lyrics_box{border-radius: 30px 30px 0 0;}
+
+  #content .music_inner .view_box ul.lyrics_box dd {padding: 0 10%;}
+
+  #content .music_inner .controll_box ul.music_list li {width:100%; float:none;}
+  #content .music_inner .controll_box ul.music_list li:nth-of-type(n+4) {display: none;}
+  #content .music_inner .view_box ul.lyrics_box dd p span:nth-of-type(n+6) {display: none;}
+  #content .music_inner .view_box .lyrics_box {position:relative; background: rgba(255, 255, 255, .4);}
+
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+  #content .movie_inner .clip_part p {height:82px;}
+  #content .music_inner .view_box ul.lyrics_box dd p span:nth-of-type(n+4) {display: none;}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  #content .movie_inner .clip_part:nth-of-type(n+1) {width:100%; float:none;}
+
+  #content .movie_inner .clip_part:nth-of-type(n+4) {display: none;}
+
+
+
+  #content .music_inner .controll_box{ width: 100%; float:none;}
+  #content .music_inner .controll_box ul.music_list {margin-bottom: 50px;}
+  #content .music_inner .controll_box ul.music_list li {width:33.33%; float:left;}
+
+  #content .music_inner .view_box {width: 100%; margin:0; float:none;}
+  #content .music_inner .view_box img {position:absolute; left:0; top:0;}
+  #content .music_inner .view_box li{display: none;}
+  #content .music_inner .controll_box ul.music_list li a span {font-size: 1rem;}
+}
+
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+
+}

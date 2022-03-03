@@ -1,0 +1,47 @@
+/* 와이드 pc */
+
+
+#content p:nth-of-type(1) {text-align: center; padding:0 5%; line-height: 2rem; }
+
+#content ul {overflow: hidden;}
+#content ul li {width: 33.33%; float:left;}
+#content ul li img {width:100%; transition: all .5s; -webkit-filter: grayscale(100%); filter:gray;}
+#content ul li:hover img {transform: rotateY(360deg); -webkit-filter: grayscale(0); filter:none; }
+
+#content .visual {margin-top: 100px;}
+#content .visual .visual_box {height:200px; background: url(../images/sub1/bg_box.jpg) center center no-repeat; background-attachment: fixed;}
+#content .visual .visual_box p {padding-top:80px; font-size: 3rem; font-family: 'Permanent Marker', cursive; text-shadow: 2px 2px 14px red;}
+
+#content p:nth-last-of-type(1) {margin-bottom: 50px; text-align: center; }
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+  #content ul li {width: 50%;}
+  #content ul li img {width:100%; transition: all .5s; -webkit-filter: grayscale(0); filter:none;}
+
+  #content .visual .visual_box {height:700px; background-attachment:scroll;}
+  #content .visual .visual_box p {font-size: 3rem; padding-top: 350px; text-align: left;}
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  #content ul li {width: 100%;}
+  #content ul li:nth-of-type(n+4) {display: none;}
+  #content .visual .visual_box p {font-size: 2rem;}
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+
+}

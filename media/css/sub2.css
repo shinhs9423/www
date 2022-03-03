@@ -1,0 +1,84 @@
+/* 와이드 pc */
+
+/* #content li:nth-of-type(1) {background: url(../images/cast_01.jpg) left center no-repeat, url(../images/sub2/cast_01.jpg) right center no-repeat;}
+#content li:nth-of-type(2) {background: url(../images/cast_02.jpg) left center no-repeat, url(../images/sub2/cast_02.jpg) right center no-repeat;}
+#content li:nth-of-type(3) {background: url(../images/cast_03.jpg) left center no-repeat, url(../images/sub2/cast_03.jpg) right center no-repeat;}
+#content li:nth-of-type(4) {background: url(../images/cast_04.jpg) left center no-repeat, url(../images/sub2/cast_04.jpg) right center no-repeat;}
+#content li:nth-of-type(5) {background: url(../images/cast_05.jpg) left center no-repeat, url(../images/sub2/cast_05.jpg) right center no-repeat;}
+#content li:nth-of-type(6) {background: url(../images/cast_06.jpg) left center no-repeat, url(../images/sub2/cast_06.jpg) right center no-repeat;}
+#content li:nth-of-type(7) {background: url(../images/cast_07.jpg) left center no-repeat, url(../images/sub2/cast_07.jpg) right center no-repeat;} */
+
+#content ul {}
+#content li {overflow: hidden; position:relative;}
+
+#content li img {width:33.33%; object-fit:contain;}
+
+#content li::before {content: ''; width:33.33%; height: 100%; position:absolute; top:0; left:0;
+  background: -webkit-linear-gradient(top, rgba(222,183,122,0) 0%, rgba(222,183,122,.8) 75%);
+  background: linear-gradient(to bottom, rgba(222,183,122,0) 0%, rgba(222,183,122,.8) 75%);
+  opacity: 0;
+  transition: all .5s;
+}
+#content li:hover::before {
+  opacity: 1;
+}
+#content li::after {content: ''; width:33.33%; height: 100%; position:absolute; top:0; right:0;
+  background: -webkit-linear-gradient(top, rgba(222,183,122,0) 0%, rgba(222,122,122,.8) 75%);
+  background: linear-gradient(to bottom, rgba(222,183,122,0) 0%, rgba(222,122,122,.8) 75%);
+  opacity: 0;
+  transition: all .5s;
+}
+#content li:hover::after {
+  opacity: 1;
+}
+
+
+#content li img:nth-of-type(1) {float:left;}
+#content li img:nth-of-type(2) {float:right;}
+
+#content li dl {position:absolute; width:33.33%; height:100%; box-sizing: border-box; left:0; top:0; margin:0 33.33%; padding: 20px; background: rgba(0,0,0,.7);}
+#content li dt {line-height: 1.5rem; padding: 10px 0; font-size: 1.250rem;}
+#content li dt:nth-of-type(1) {text-shadow: 4px 4px 12px rgb(222,183,122);}
+#content li dt:nth-of-type(2) {text-shadow: 4px 4px 12px rgb(222,22,22); text-align: right;}
+#content li dd {line-height: 1.5rem; margin-top: 30px;}
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+  #content li {overflow: hidden; position:relative; }
+  #content li img {width:50%; height:500px; object-fit: cover;}
+  #content li dl {width:50%; margin:0;}
+  #content li::before {width:50%;}
+  #content li::after {width:50%;
+
+  }
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+
+
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  #content li dl {position:relative; height:500px; background: rgba(0,0,0,0);}
+  #content li:nth-of-type(odd) dl {float:left;}
+  #content li:nth-of-type(even) dl {float:right;}
+  #content li img {height:250px;}
+  
+
+}
+
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+
+}

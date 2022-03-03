@@ -1,0 +1,46 @@
+/* 와이드 pc */
+#content>p:nth-of-type(1) {text-align: center; font-size: 2vw; padding-bottom: 2.4vw;}
+
+#content .con_inner ul {width:100%; columns: 5; }
+#content .con_inner li {width: 100%; display: inline-block; margin: 10px 0; position:relative;}
+
+#content .con_inner li a {width: 100%; display: block; overflow: hidden; transition: all .3s; box-sizing: border-box; border: 10px solid #fff; border-radius: 4px;}
+#content .con_inner li:hover a {box-shadow: 2px 2px 8px 4px rgba(222,22,22,.4);}
+/* #content .con_inner li:nth-of-type(odd):hover a {transform: rotate(1deg);}
+#content .con_inner li:nth-of-type(even):hover a {transform: rotate(-1deg);} */
+#content .con_inner li a img {width:100%; transition:all .3s;}
+#content .con_inner li:hover a img {transform: scale(1.2);}
+#content .con_inner li a p {color: #333; background: #fff; display: block; line-height: 1.5rem; transition:all .3s; padding: 10px 0 5px;}
+#content .con_inner li:hover a p {color: rgba(3,3,3,0); }
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+  #content>p:nth-of-type(1) {font-size: 1.5rem;}
+  #content .con_inner ul {columns: 3; width:96%; margin: 0 2%;}
+
+  /* #content .con_inner li:nth-of-type(odd):hover a {transform: rotate(0);}
+  #content .con_inner li:nth-of-type(even):hover a {transform: rotate(0);} */
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+
+  #content .con_inner ul {columns: 2;}
+  #content>p:nth-of-type(1) {font-size: 1rem;}
+}
+
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+
+}

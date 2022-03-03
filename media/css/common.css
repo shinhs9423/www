@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Nanum+Gothic:wght@400;700&family=Roboto:wght@400;700&display=swap&family=Permanent+Marker&display=swap');
+
+/*
+font-family: 'Lora', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Permanent Marker', cursive;
+*/
+
+
+/* Reset CSS  */
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top;
+-webkit-text-size-adjust:none;}
+html{font-size:16px;}
+body {font-family: 'Roboto', sans-serif; color:#fff;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+ul, ol, dl { list-style:none; }
+img, video {border:0; vertical-align:top; }
+a, a:link {color:#fff;text-decoration:none; }
+a:visited { color:#fff; }
+a:hover, a:active {color:#fff;text-decoration:none; }
+table { border-collapse:collapse; border-spacing:0; }
+input, select { vertical-align:middle; }
+label { cursor:pointer; }
+.blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address { font-style:normal; font-weight:normal; }
+p,li,dd{ line-height:1.5em}
+.hidden, #skipNav{display: block; position: absolute; left:-1000%; top:0; width: 1px; height: 1px;
+    overflow: hidden; color: #000;}
+
+
+/* 와이드 pc */
+
+/* 헤더 공통 영역 */
+#wrap{width:100%; overflow: hidden}
+#headerArea{position:fixed; z-index: 30;
+    background: rgba(0,0,0,0); left:0; top: 0;
+    width: 100%; transition:all .3s;}	
+#headerArea	.headerInner{width: 90%; margin: 0 5%; overflow: hidden;}
+#headerArea h1{float: left; margin: 20px 0; width: 20%;}
+#headerArea h1 a {display: block; width:300px; height:100px; background: url(../images/logo.png) 0 0 no-repeat;}	
+#headerArea h1 a img {width:100%;}	
+
+
+#headerArea #gnb{float: right; margin-top: 25px;}
+#headerArea #gnb ul.menu{overflow: hidden;}
+#headerArea #gnb ul li{float: left;}
+#headerArea #gnb ul li a{display:block; margin-right: 20px; font-family: 'Lora', serif; font-weight: 700; font-size: 3rem; padding: 30px 10px; text-shadow: 0 0 10px rgba(214, 183, 111, 1);}
+#headerArea #gnb ul li a:hover{text-shadow: 0 0 10px rgba(222, 22, 22, 1);}
+#headerArea #gnb .menu_btn {display: none; position:absolute; right:40px; top:40px; font-size: 3rem;}
+
+
+/* 푸터 공통 영역 */
+
+#footerArea {background:#111; padding: 50px 0;}
+#footerArea img {display:block; margin: 0 auto 30px;}
+#footerArea p {width: 60%; margin: 0 auto; font-size: 1.125rem; text-align: center; line-height: 1.5rem;}
+#footerArea p span {display: block; padding-top:10px; font-size: 1rem; color:rgba(255,255,255,.8);}
+#footerArea ul {display:flex; justify-content: center;}
+#footerArea ul li {width: 100px; height:50px; margin-top: 30px;}
+#footerArea ul li:nth-of-type(1) {background: url(../images/pd_logo_01.png) center center no-repeat;}
+#footerArea ul li:nth-of-type(2) {background: url(../images/pd_logo_02.png) center center no-repeat;}
+#footerArea ul li:nth-of-type(3) {background: url(../images/pd_logo_03.png) center center no-repeat;}
+
+#footerArea #topMove {display:block; width: 50px; background: #111; border-radius: 25px 25px 0 0; padding: 15px 20px; text-align: center; position:relative; left:50%; margin-left:-40px; top:-95px; margin-bottom: -65px;}
+#footerArea #topMove i {font-size: 1.3rem;}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+    #headerArea #gnb ul li a{display:block; margin-right:10%; font-size: 2.375rem;}
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    
+    #headerArea	{ border-radius: 0 0 0 40px; background: rgba(0,0,0,.9);}
+    #headerArea	.headerInner{width: 100%;}
+    #headerArea #gnb{float:none;}
+    #headerArea #gnb ul.menu {width: 100%; padding-bottom: 100px; display: none;}
+
+    #headerArea #gnb ul li{float: none; text-align: right; }
+    #headerArea #gnb ul li a{display:block; margin-right:10%; font-size: 2.500rem;padding:40px 10px;}
+    #headerArea #gnb .menu_btn {display: block;}
+    #headerArea h1 a { width:200px; height:80px; background: url(../images/logo_s.png) 0 0 no-repeat;}	
+    #headerArea #gnb .menu_btn {top:30px;}
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+    #headerArea h1{float: left; margin: 30px 0;}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+    #headerArea h1{float: left; margin: 20px 0;}
+	#headerArea h1 a img {width:50%;}
+    #headerArea #gnb ul li a{font-size: 1.5rem;}	
+    #headerArea h1 a {width:100px; height:40px; background: url(../images/logo_xs.png) 0 0 no-repeat;}
+    #headerArea #gnb .menu_btn {right:20px; top:25px; font-size: 2rem;}
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:320px; }
+}
