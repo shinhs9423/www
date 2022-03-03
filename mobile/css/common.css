@@ -1,0 +1,139 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap&https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+/* 
+font-family: 'Roboto', sans-serif; font-weight:700;
+font-family: 'Noto Sans KR', sans-serif; font-weight:700;
+font-family: 'Nanum Gothic', sans-serif; font-weight:400;
+font-family: 'Nanum Myeongjo', serif; font-weight:400;
+*/
+
+
+/* 모바일 코딩 필수 공통영역 */
+* {
+ margin:0;
+ padding:0;
+ -webkit-text-size-adjust:none;
+}
+ html {font-size: 14px;}
+body {
+  /* position:relative; */
+ color:#333;
+ font-family:돋움, Dotum; }
+img, fieldset { border:0; vertical-align:top }
+ul, ol, li, dl { list-style:none; }
+h1, h2, h3, h4, h5, h6 {
+ font-size:100%;
+ font-weight:normal; }
+hr { display:none; }
+a { color:inherit; }
+a, a:link {
+ color:#333;
+ text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {
+ color:#333;
+ text-decoration:none; }
+em, i, address {
+ font-style:normal;
+ font-weight:normal; }
+legend, caption {
+ display:none;
+ clear:both; }
+input, textarea, select, button, table {
+ font-size:inherit;
+ font-family:inherit;
+ line-height:inherit; }
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input {
+ border-radius:1px;}
+textarea { resize:none; }
+label { cursor:pointer; }
+table {border-collapse: collapse;}
+.hidden,#skipNav{display: block; position: absolute; left:-1000%;top:0; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+
+/* 전체 공통 */
+#wrap{ width:100%; position: relative;  overflow:hidden;}
+
+
+/* top move */
+.topMove {display: block; position: fixed; right:30px; bottom: 130px; z-index: 5; transition: all .1s ease-in;}
+.topMove i {font-size: 30px; color: #0a2267;}
+
+
+
+/* 헤더공통 */
+#headerArea {background: #fff; position:fixed; top:0; left:0; z-index: 100; box-shadow: 4px 4px 20px 2px rgba(3,3,3,.1); width:100%; height:62px; transition: all .3s;}
+#headerArea .header_top {position:relative;}
+#headerArea .header_top h1 {padding: 20px 0;}
+#headerArea .header_top h1 a {display:block; background: url(../images/header_logo_x1.png) 0 0 no-repeat; width: 62px; height: 22px; text-indent: -999px; overflow: hidden; margin: 0 auto;}
+
+
+@media screen and (max-width:320px) {
+
+}
+
+#headerArea .header_top .menu_btn {position: absolute; margin:20px; right:0; top: 0;}
+#headerArea .header_top .menu_btn i {font-size:2rem; color:#0a2267}
+
+
+/* nav */
+#gnb {display: none; background: #fff; padding-bottom: 30px; border-radius:  0 0 30px 30px; box-shadow: 12px 20px 12px 4px rgba(3,3,3,.3);}
+#gnb>ul:nth-of-type(1) {}
+#gnb>ul:nth-of-type(1) li {}
+#gnb>ul:nth-of-type(1) li h3 {font-family: 'Noto Sans KR', sans-serif; font-weight:700; padding: 10px 30px; font-size: 1.2rem;}
+
+#gnb>ul:nth-of-type(1) li h3 i {font-size: 1.2rem; margin-left: 10px; transition: all .5s;}
+#gnb>ul:nth-of-type(1) li ul {display: none;}
+#gnb>ul:nth-of-type(1) li ul li {}
+#gnb>ul:nth-of-type(1) li:nth-of-type(1) ul li {display: block;}
+#gnb>ul:nth-of-type(1) li ul li a {display: block; font-family: 'Nanum Gothic', sans-serif; font-weight:400; color: #666; padding: 10px 50px; font-size: 1rem;}
+
+#gnb .nav_bottom{width: 80%; border-top: 1px solid #ccc; margin:10px auto 50px;}
+#gnb .sns {text-align: center;}
+#gnb .sns ul {width:200px; overflow: hidden; margin:0 auto;}
+#gnb .sns ul li {width: 23%; height: 46px; margin: 20px 1% ; border-radius: 23px; float: left; background: #ccc;}
+#gnb .sns ul li a {display: block; padding-top:14px; color:#fff;}
+#gnb .sns ul li a i {font-size: 1.5rem;}
+
+#gnb .nav_bottom>a:nth-last-of-type(1) {display: block; width: 70%; margin:0 auto; text-align: center; padding:10px 0; background: #ccc; border-radius: 20px;font-family: 'Nanum Gothic', sans-serif; font-weight:400;}
+#gnb .nav_bottom>a:nth-last-of-type(1) i {margin-right: 10px;}
+
+
+/* 푸터공통 */
+
+#footerArea {background: #111; overflow: hidden; margin-top:100px; padding: 0 20px;}
+#footerArea .footer_top {padding: 30px 10px 20px; position:relative;}
+
+#footerArea .footer_top img {}
+
+#footerArea .footer_top .sns ul {width: 200px; overflow: hidden; margin:0; position: absolute; top: 30px; right:10px;}
+#footerArea .footer_top .sns ul li {width: 23%; height: 46px; margin: 0 1% ; border-radius: 23px; float: left; background: #828282;}
+#footerArea .footer_top .sns ul li a {display: block; padding-top:14px; color:#fff; text-align: center; }
+#footerArea .footer_top .sns ul li a i {font-size: 1.5rem;}
+
+@media screen and (max-width: 430px) {
+  #footerArea .footer_top img {width : 30%;}
+  #footerArea .footer_top .sns ul {width : 148px;}
+  #footerArea .footer_top .sns ul li {width : 30px; height: 30px; border-radius: 15px;}
+  #footerArea .footer_top .sns ul li a {display: block; padding-top:8px; color:#fff; text-align: center; }
+  #footerArea .footer_top .sns ul li a i {font-size: 1.2rem;}
+}
+
+#footerArea .footer_mid {padding:20px 0 10px 10px;}
+#footerArea .footer_mid ul {overflow: hidden;}
+#footerArea .footer_mid ul li {float:left; font-weight: bold; margin-right: 10px; margin-bottom: 10px;}
+#footerArea .footer_mid ul li a {color: #fff; font-size: .888rem;}
+#footerArea .footer_mid address {margin-bottom: 10px; font-size: .886rem; color:#fff;}
+#footerArea .footer_mid p {font-size: .886rem; color:#fff;}
+
+
+#footerArea .footer_bottom { margin: 20px 0 50px;}
+#footerArea .footer_bottom a {margin: 0 auto; display:block; width: 70%; padding:20px 30px; text-align: center; background:#828282; color:#fff; border-radius: 30px; font-family: 'Nanum Gothic', sans-serif; font-weight:400;}
+#footerArea .footer_bottom i {margin-right: 5px;}
+
+
+
+
+

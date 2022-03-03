@@ -1,0 +1,32 @@
+/* 맵 영역 보기 css잡고 삭제 */
+/* #content .content_area .tabs li>div {border: 1px solid red;} */
+
+
+/* 탭  */
+#content .tabs ul.tab_menu {overflow: hidden; width: 60%; margin: 0 auto 50px; box-shadow: 2px 2px 2px 1px rgba(3,3,3,.1);}
+#content .tabs ul.tab_menu li {float: left; width:50%; background: #fcfcfc;}
+#content .tabs ul.tab_menu li a {display: block; color:#333; text-align: center; padding: 5px 0;}
+#content .tabs ul.tab_menu li:nth-of-type(1) a {font-weight: 700;}
+
+
+/* 맵 크기 */
+#content .content_area .tabs .inner li>div {height: 300px; margin: 0 10%;}
+
+@media screen and (min-width:641px) {
+  #content .content_area .tabs .inner li>div {height: 200px; margin: 0 10%;}
+}
+
+#content .content_area .tabs .inner li>dl {margin: 0 10% 30px; overflow: hidden; padding: 20px 0; background: #0a2267; color:#fff; border-radius: 0 0 30px 0;}
+#content .content_area .tabs .inner li>dl dt {float:left; width: 15%; font-family: 'Noto Sans KR', sans-serif; font-weight:700; font-size: 1.1rem; text-align: center;}
+#content .content_area .tabs .inner li>dl dd {float:right; width: 80%; padding-left:4%; font-family: 'Nanum Gothic', sans-serif; font-weight:400; font-size: .8rem; line-height: 1.5rem; border-left: 1px solid #fcfcfc;}
+#content .content_area .tabs .inner li>dl dd span { font-size:1rem;}
+
+#content .content_area .tabs .other li>div {height: 200px; margin: 0 10%;}
+#content .content_area .tabs .other li>dl {margin: 0 10%; padding: 20px 0; }
+#content .content_area .tabs .other li>dl dt { font-family: 'Noto Sans KR', sans-serif; font-weight:700; font-size: 1.1rem; margin-bottom: 10px;}
+#content .content_area .tabs .other li>dl dd {width: 90%; padding-left:5%; font-family: 'Nanum Gothic', sans-serif; font-weight:400; font-size: .8rem; line-height: 1.5rem; border-left: 3px solid #ccc;}
+#content .content_area .tabs .other li>dl dd span {font-size:1rem;}
+
+#content .content_area .tabs .other li {border-radius: 0 0 30px 0; margin: 0 5% 10px; box-shadow: 4px 4px 8px 2px rgba(3,3,3,.1);}
+/* #content .content_area .tabs .other li:nth-of-type(even) {background: rgba(10, 34, 103, 1);}
+#content .content_area .tabs .other li:nth-of-type(odd) {background: rgba(255, 0, 0, 1);} */

@@ -1,0 +1,15 @@
+
+/* content */
+
+#content .content_area> ul:nth-of-type(1) {overflow: hidden; height:1000px; background: url(../images/recruit_bg_01_x2.jpg) center center no-repeat;}
+
+
+
+/* 스크립트 추가 후 삭제 */
+
+
+#content .content_area ul li dl {font-family: 'Nanum Gothic', sans-serif; padding: 20px 20px 30px; color:#fff; text-align: center;}
+#content .content_area ul li dt {font-weight: 700; padding-top:40px; margin-bottom: 20px;font-size: 2rem;}
+
+#content .content_area ul li dd {font-size: 1.2rem;}
+#content .content_area ul li dd span {display:block; font-size:1.4rem; font-weight: 700; padding-top:10px;}

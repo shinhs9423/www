@@ -1,0 +1,31 @@
+/* content */
+
+
+#content .content_area .modal_list ul {overflow: hidden;}
+#content .content_area .modal_list ul li {width: 50%; float: left; }
+#content .content_area .modal_list ul li a {display: block; margin: 2px; position:relative; left:0; top:0;}
+#content .content_area .modal_list ul li a p {font-family: 'Nanum Gothic', sans-serif; font-weight:700; font-size: 1.3rem; position: absolute; width:100%; top:40%; text-align: center; color:#fff;}
+#content .content_area .modal_list ul li a p i {display: block; margin-top: 10px; font-size: 1.8rem;}
+#content .content_area .modal_list ul li a img {width:100%;border-radius: 15px;}
+
+
+#content .content_area .modal_overlay {display:none; width:100%; height: 100%; background: rgba(0,0,0, .7); position:fixed; left:0;top:0; text-align: center; z-index: 100;}
+
+#content .content_area .modal_window {background: #fff;margin: 0 20px; border-radius: 30px 30px 0 0;}
+#content .content_area .modal_window li {padding: 30px 5px; display: none; margin-top: 20%;}
+#content .content_area .modal_window li p {font-family: 'Noto Sans KR', sans-serif; font-weight:700; margin-bottom:20px; font-size: 2.2rem; color:#0a2267;}
+#content .content_area .modal_window li dl {font-family: 'Nanum Gothic', sans-serif; text-align: justify; padding:0 5px;}
+#content .content_area .modal_window li dt {font-weight:700; font-size: 1.1rem; padding: 10px 0;}
+#content .content_area .modal_window li dt i {margin-right: 10px; font-size: 1.5rem;}
+#content .content_area .modal_window li dd {line-height: 1.5rem; margin-bottom: 20px; color:#666; padding:0 10px;}
+
+#content .content_area .modal_overlay a {display:block; margin: 0 20px; font-family: 'Roboto', sans-serif;  padding:20px 0; background: #0a2267; color:#fff; font-size:1.2rem; border-radius: 0 0 30px 30px;}
+#content .content_area .modal_overlay a i {display:block; margin: 0 20px; padding:20px 0; background: #0a2267; color:#fff; font-size:1.2rem; border-radius: 0 0 30px 30px;}
+
+@media screen and (min-width:640px) {
+  #content .content_area .modal_window li {padding: 10px 5px; margin-top:5%; }
+  #content .content_area .modal_window li dl {padding:0 30px;}
+  #content .content_area .modal_window li dt {font-size: 1rem; padding: 5px 0;}
+  #content .content_area .modal_window li dt i {font-size: 1.2rem;}
+  #content .content_area .modal_window li dd {line-height: 1.5rem; margin-bottom: 10px; padding:0 20px;}
+}

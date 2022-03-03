@@ -1,0 +1,127 @@
+/* CSS Document */
+
+
+body .more_btn {display: block; width: 130px; padding: 10px 0; margin:0 auto; background:#0a2267; color:#fff; border-radius: 20px; text-align: center; box-shadow: 4px 4px 10px 4px rgba(3,3,3,.1);}
+.more_btn i {margin-left: 5px;}
+
+/* 비주얼 */
+.visual {position:relative;}
+.visual ul {background: red;}
+.visual ul li {display: none; transition: all 3s;}
+.visual ul li:nth-of-type(1) {display:block;}
+.visual ul li img {width:100%;}
+.visual ul li p {width:40%; position:absolute; top: 60%; left: 5%; color:#fff; text-align: justify; font-size: 1.444rem; font-family: 'Noto Sans KR', sans-serif; font-weight:700;}
+.visual a {display: block; padding: 20px; color: rgba(255,255,255, .8); position:absolute; top:45%;}
+.visual a i {font-size: 2.5rem;}
+.visual a:nth-of-type(1) {left:0;}
+.visual a:nth-of-type(2) {right:0;}
+
+
+/* 기업소개 */
+#content h3 { margin-top:25px; padding:25px 0 50px; text-align: center; font-size: 1.667rem;  font-family: 'Noto Sans KR', sans-serif; font-weight:700; position:relative;}
+#content h3::before {content:''; width: 10px; height: 26px; position:absolute; left:50%; margin-left:-70px; top:30px; background:#f00; transform: skew(20deg);}
+
+.company {}
+
+.company .swiper-container {
+  width: 100%;
+}
+.company .swiper-slide {
+  text-align: center;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.company .swiper-slide {}
+.company .swiper-slide:nth-of-type(1) {background: url(../images/company_01_x2.jpg) left center no-repeat; background-size: cover;}
+.company .swiper-slide:nth-of-type(2) {background: url(../images/company_02_x2.jpg) left center no-repeat; background-size: cover;}
+.company .swiper-slide:nth-of-type(3) {background: url(../images/company_03_x2.jpg) left center no-repeat; background-size: cover;}
+
+.company .swiper-slide dl {color:#fff; margin: 20px; border: 1px solid #fff;}
+.company .swiper-slide dt {text-align: center; padding-top: 40px; font-family: 'Roboto', sans-serif; font-weight:700; font-size: 1.667rem;}
+.company .swiper-slide dd {text-align: justify; padding: 20px; font-family: 'Nanum Gothic', sans-serif; font-weight:300; font-size: 1.111rem; text-align: center;}
+
+
+/* .company ul {overflow:hidden;}
+
+.company ul li {padding: 20px; float:left;}
+.company ul li:nth-of-type(1) {background: url(../images/company_01_x2.jpg) right center no-repeat; background-size: cover;}
+.company ul li:nth-of-type(2) {background: url(../images/company_02_x2.jpg) right center no-repeat; background-size: cover;}
+.company ul li:nth-of-type(3) {background: url(../images/company_03_x2.jpg) right center no-repeat; background-size: cover;}
+
+.company ul li dl {color:#fff; margin: 20px; border: 1px solid #fff; }
+.company ul li dt {text-align: center; padding-top: 40px; font-family: 'Roboto', sans-serif; font-weight:700; font-size: 1.667rem;}
+.company ul li dd {text-align: justify; padding: 20px; font-family: 'Nanum Gothic', sans-serif; font-weight:300; font-size: 1.111rem; } */
+
+.company .more_btn {margin-top: 30px;}
+
+/* 사업분야 */
+
+.business {}
+.business li {overflow: hidden; width:100%; height: 180px; position:relative; text-align: center;}
+
+.business li dl {width:50%; height:180px; text-align: center;}
+.business li:nth-of-type(even) dl {float:left;}
+.business li:nth-of-type(odd) dl {float:right;}
+.business li dt {font-family: 'Roboto', sans-serif; font-weight:700; font-size: 1.333rem; padding: 20px 10px 10px;}
+.business li dt span:nth-of-type(1) {color:#0a2267;}
+.business li dt span:nth-of-type(2) {color:#f00;}
+.business li dd {font-family: 'Nanum Gothic', sans-serif; font-weight:400; font-size: 1.111rem; padding :0 10px;}
+
+.business li .more_btn {position: absolute; width:40%;}
+.business li:nth-of-type(even) .more_btn {left:0; bottom:10px; margin: 0 55% 3% 5%;}
+.business li:nth-of-type(odd) .more_btn {left:0; bottom:10px; margin: 0 5% 3% 55%;}
+
+.business li .bg_box {width: 50%; height:180px; background:blue;}
+.business li:nth-of-type(even) .bg_box {float: right;}
+.business li:nth-of-type(odd) .bg_box {float: left;}
+
+.business li:nth-of-type(1) .bg_box {background: url(../images/business_01_x2.jpg) left center no-repeat; background-size: cover;}
+.business li:nth-of-type(2) .bg_box {background: url(../images/business_02_x2.jpg) left center no-repeat;  background-size: cover;}
+.business li:nth-of-type(3) .bg_box {background: url(../images/business_03_x2.jpg) left center no-repeat; background-size: cover;}
+
+@media screen and (max-width: 320px) {
+  .business li:nth-of-type(1) .bg_box {background: url(../images/business_01_x1.jpg) left center no-repeat; background-size: cover;}
+  .business li:nth-of-type(2) .bg_box {background: url(../images/business_02_x1.jpg) left center no-repeat;  background-size: cover;}
+  .business li:nth-of-type(3) .bg_box {background: url(../images/business_03_x1.jpg) left center no-repeat; background-size: cover;}
+  
+}
+
+
+
+
+/* 정도경영 */
+
+.management {}
+.management ul {overflow: hidden;}
+.management ul li {width:31.33%; margin: 0 1%; float:left; position: relative;}
+.management ul li img {width:100%; border-radius: 10px;}
+.management ul li dl {width:100%; position:absolute; left:0; top: 0; color:#fff; text-align: center;}
+.management ul li dt {padding: 30% 5px 5px; font-family: 'Roboto', sans-serif; font-weight:700; font-size: 1.333rem;}
+.management ul li dd {font-family: 'Nanum Gothic', sans-serif; font-weight:400; font-size: 1.111rem;}
+
+.management .more_btn {margin-top: 30px;}
+
+
+/* 인재채용 */
+.recruit {}
+.recruit ul {overflow: hidden;}
+.recruit li {width: 50%; float:left; height: 120px;}
+.recruit li:nth-of-type(1) {background: url(../images/recruit_01_x2.jpg) left center no-repeat; background-size: cover;}
+.recruit li:nth-of-type(2) {background: url(../images/recruit_02_x2.jpg) left center no-repeat; background-size: cover; margin-top:40px; margin-bottom: 30px;}
+
+.recruit li dl {color:#fff; text-align: center;}
+.recruit li dt {font-family: 'Noto Sans KR', sans-serif; font-weight:700; font-size: 1.333rem; padding:8% 0 3%;}
+.recruit li dd {font-family: 'Nanum Gothic', sans-serif; font-weight:400; font-size: 1.111rem;}

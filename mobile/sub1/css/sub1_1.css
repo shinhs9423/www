@@ -1,0 +1,7 @@
+#content .content_area {text-align: center; margin-top: 50px;}
+#content .content_area .visual_box img {width:60%; margin-bottom: 10px;}
+#content .content_area .visual_box p { font-family: 'Nanum Gothic', sans-serif; font-weight:400; font-size: 1rem; color:#666;}  
+#content .content_area .visual_box p strong { color: #333;}  
+
+#content .text_box {padding: 0 30px; font-family: 'Nanum Gothic', sans-serif; font-weight:400; font-size: 1rem; line-height: 1.5rem; text-align: justify;}
+#content .text_box p {margin-top: 30px;}

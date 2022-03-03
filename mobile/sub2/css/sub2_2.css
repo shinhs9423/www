@@ -1,0 +1,48 @@
+
+/* 탭 */
+#content .tabs ul.tab_menu {overflow: hidden; width: 60%; margin: 0 auto 50px; box-shadow: 2px 2px 2px 1px rgba(3,3,3,.1);}
+#content .tabs ul.tab_menu li {float: left; width:50%; background: #fcfcfc;}
+#content .tabs ul.tab_menu li a {display: block; color:#333; text-align: center; padding: 5px 0;}
+#content .tabs ul.tab_menu li:nth-of-type(1) a {font-weight: 700;}
+
+
+/* 탭1 이미지, p, table */
+#content .con_list:nth-of-type(1) {}
+#content .con_list:nth-of-type(1) img {width: 80%; margin: 0 10%;}
+
+#content .con_list:nth-of-type(1) p:nth-of-type(1) {font-family: 'Nanum Gothic', sans-serif; font-weight:400; line-height: 1.5rem; font-size: 1rem; text-align: justify; padding: 20px;}
+
+#content .con_list:nth-of-type(1) table {text-align: center; margin: 0 auto;}
+#content .con_list:nth-of-type(1) table th {font-family: 'Nanum Gothic', sans-serif; font-weight:700; border-top: 1px solid #333; padding: 4px 0;}
+#content .con_list:nth-of-type(1) table td {font-family: 'Nanum Gothic', sans-serif; font-weight:300; color:#666; font-size: .9rem; line-height: 1.5rem; border-bottom: 1px solid #ccc; padding: 2px 0}
+#content .con_list:nth-of-type(1) table tr:nth-last-of-type(1) {border-bottom: 1px solid #333;}
+
+@media screen and (min-width:450px) {
+  
+  #content .con_list:nth-of-type(1) table {width: 90%; text-align: left;}
+  #content .con_list:nth-of-type(1) table th {font-size: 1.2rem;}
+  #content .con_list:nth-of-type(1) table td {font-size: 1rem;}
+  
+}
+
+/* 탭2 */
+
+#content .con_list:nth-of-type(2) {}
+#content .con_list:nth-of-type(2) ul {margin: 0 5px;}
+#content .con_list:nth-of-type(2) li {overflow: hidden;}
+#content .con_list:nth-of-type(2) li:nth-of-type(even) {background:#f4f4f4;}
+#content .con_list:nth-of-type(2) li:nth-of-type(odd) {background:#fcfcfc;}
+
+#content .con_list:nth-of-type(2) li .text_box{width: 50%;}
+#content .con_list:nth-of-type(2) li .img_box{width: 50%; position:relative;}
+#content .con_list:nth-of-type(2) li .img_box img{width: 100%; margin-top:30px;}
+
+#content .con_list:nth-of-type(2) li:nth-of-type(even) .img_box{float:left;}
+#content .con_list:nth-of-type(2) li:nth-of-type(odd) .img_box{float:right;}
+#content .con_list:nth-of-type(2) li:nth-of-type(even) .text_box{float:right;}
+#content .con_list:nth-of-type(2) li:nth-of-type(odd) .text_box{float:left;}
+
+#content .con_list:nth-of-type(2) li dl {font-family: 'Nanum Gothic', sans-serif;}
+#content .con_list:nth-of-type(2) li dt {font-weight:700; font-size: 1.5rem; text-align: center; padding: 30px 0 20px;}
+#content .con_list:nth-of-type(2) li dd {font-weight:400; font-size: 1.1rem; line-height: 1.7rem; text-align: justify; padding: 0 25px; margin-bottom: 30px;}
+

@@ -1,0 +1,24 @@
+/* 비주얼 & 서브네비 */
+
+.visual {position:relative;left:0;top:0; height:180px; overflow: hidden; background:url(../images/visual.jpg) center center no-repeat; background-size: cover;}
+.visual h2 {position:absolute; width:100%; left:0; top: 55%; color:#fff; text-align: center; font-size: 1.5rem; font-family: 'Noto Sans KR', sans-serif; font-weight:700;}
+
+
+.sub_menu {width:100%; text-align: center; position:relative; top: -20px; margin-bottom: -20px;}
+.sub_menu ul {overflow: hidden; width:90%; margin: 0 auto; box-shadow: 4px 4px 10px 4px rgba(3,3,3,.2);}
+.sub_menu li {float:left; width: 33.33%;}
+.sub_menu li a {display: block; font-family: 'Noto Sans KR'; font-size: 1rem; padding: 10px 0; text-align: center; background: #fff; color: #333; transition: all .5s; position:relative;}
+.sub_menu .current a {background: #0a2267; color:#fff; font-weight: bold;}
+
+/* 콘텐츠 타이틀 영역 */
+#content .title_area  {}
+#content .title_area .line_map {position: absolute; right:10px; top:70px; font-size: 0.889rem; color:#fff;}
+
+#content .title_area h2 {margin: 50px 0 50px; font-size: 2rem; font-family: 'Noto Sans KR', sans-serif; font-weight:700; text-align: center; position:relative;}
+#content .title_area h2::after {content:''; width:1px; height:20px; background: #0a2267; position: absolute; left:50%; top:50px; transform: skew(10deg);}
+
+#content .title_area p:nth-of-type(1) {text-align: center; font-family: 'Nanum Gothic', sans-serif; font-weight:400; font-size: 1rem; padding: 0 10px; margin-bottom: 50px;}
+#content .title_area p span:nth-child(1) {color:#ff0000;}
+#content .title_area p span:nth-child(2) {color:#0a2267;}
+
+
