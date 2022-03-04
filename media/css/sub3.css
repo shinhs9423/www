@@ -114,7 +114,7 @@
   from { transform: rotate(0);  box-shadow: 0 0 6px 4px rgba(255,255,255,.5);}
   to { transform: rotate(1080deg);  box-shadow: 0 0 6px 4px rgba(255,255,255,1);}
 }
-#content .music_inner .controll_box ul.music_list li a.playing {animation: playing 1s .1s linear infinite backwards;}
+#content .music_inner .controll_box ul.music_list li a.playing {animation: playing 5s .1s linear infinite backwards;}
 
 
 /* 일반 pc */
