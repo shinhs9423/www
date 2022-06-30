@@ -31,8 +31,6 @@ a.navbar-brand {display:block; width: 200px; background: url(../images/logo.png)
 .navbar-default .navbar-nav>li>a {color:#fff;}
 .navbar {border: 1px solid #000;}
 
-#navbar .container {padding: 0;}
-
 /* 비주얼 페이지네이션 */
 .main_visual{margin-top:50px;}
 .carousel-indicators {bottom: 15%;}

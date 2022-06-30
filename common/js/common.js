@@ -17,10 +17,11 @@ $(document).ready(function () {
   $('.select_box .family_site li:last a').on('blur', function () {
     $('.select_box .family_site').fadeOut('fast');
   });
-
-
+  });
 
 // top move btn
+
+$(document).ready(function () {
 
   $('.topMove').hide();
 
@@ -42,31 +43,4 @@ $(document).ready(function () {
     //상단으로 스르륵 이동합니다.
     $("html,body").stop().animate({ "scrollTop": 0 }, 1000);
   });
-
-
-  var $display = document.getElementById('searchForm').style.display;
-  $display = 'none';
-
-  function open_close_search () {
-    if ($display == 'none') {
-      $('#searchForm').slideDown('fast');
-      $display = 'block';
-      console.log($display);
-    } else if ($display != 'none') {
-      $('#searchForm').slideUp('slow');
-      $display = 'none';
-      console.log($display);
-    }
-  }
-
-  function check_search () {
-    if (!document.board_form.search.value)
-    {
-      alert("검색어를 입력하세요!");    
-      document.board_form.search.focus();
-      return;
-    }
-    document.board_form.submit();
-  }
-  
 });

@@ -1,0 +1,32 @@
+# BEGIN HTTPS Redirection Plugin
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+# END HTTPS Redirection Plugin
+php_value upload_max_filesize 128M
+php_value post_max_size 128M
+php_value memory_limit 256M
+php_value max_execution_time 300
+php_value max_input_time 300
+# BEGIN WordPress
+# “WordPress에서 시작”과 “WordPress에서 끝” 사이의 지시(줄)은
+# 동적으로 생성하고, 워드프레스 필터를 통해서만 수정해야 합니다.
+# 이들 표지 사이의 지시를 변경하면 덮어쓸 것입니다.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+# BEGIN ShortPixelWebp
+# The directives (lines) between `BEGIN ShortPixelWebp` and `END ShortPixelWebp` are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+# END ShortPixelWebp

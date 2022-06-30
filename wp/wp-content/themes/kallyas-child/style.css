@@ -1,0 +1,47 @@
+/*
+Theme Name:     Kallyas Child Theme
+Theme URI:      http://kallyas.net/demo/
+Description:    Child theme for the Kallyas theme
+Author:         Hogash
+Author URI:     http://themeforest.net/user/hogash
+Template:       kallyas
+Version:        4.0.0
+Tags: dark, light, left-sidebar, right-sidebar, fluid-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, full-width-template, theme-options, translation-ready
+Text Domain:  zn_framework
+*/
+
+input:-internal-autofill-selected {background-color: rgb(217, 239, 239) !important;}
+
+
+@media (min-width:1041px) and (max-width: 1500px){
+    .eg-main_works_pc-element-1{
+		font-size:21px !important;
+		line-height:28px !important;
+	}
+	
+	.eg-main_works_pc-element-12{
+		font-size:11px !important;
+	}
+}
+
+#simul {margin:0; padding:0;}
+#simul ul, #simul ol {list-style: none;}
+#simul a {text-decoration: none; display:block; text-align: center;}
+
+#simul_nav>ul, #simul_sub_nav>ul {display:flex; flex-direction: row; justify-content: center; align-items: center; padding: 0; margin: 0;}
+#simul_nav { background: #333;}
+#simul_nav a { color:#ffffff; padding:12px 20px; font-size:1.125em; font-weight:700; transition:all .3s; border-radius: 8px;}
+
+
+#simul_sub_nav {background: #666;}
+#simul_sub_nav a {font-size: 1.111em; padding: 10px; transition:all .3s; color:#fff;border-radius: 8px;}
+#simul_sub_nav a:hover {background-color: #00B9B9; color:#666;}
+#simul_nav>ul li, .simul_sub_nav>ul li {flex:1; min-width:100px; max-width: 150px;}
+
+#img_area {display: flex;}
+#canvas_wrap {flex:3;}
+#canvas_wrap img{width:100%;}
+#img_input {flex:1; padding: 30px;}
+#img_input form p {margin: 30px 0;}
+
+#download {padding:20px; background:#333; color:#fff; font-size: 1.333em; margin-top:50px;}
